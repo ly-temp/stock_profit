@@ -37,7 +37,7 @@ def update_stock(name):
 
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
 #dir_to_abs_url = lambda abs_dir: "https://raw.githubusercontent.com/"+os.environ['GITHUB_REPOSITORY']+'/main/'+'/'.join(abs_dir.parts[3:])
-dir_to_url = lambda abs_dir: '/'+'/'.join(abs_dir.parts[3:])
+dir_to_url = lambda abs_dir: '/'+'/'.join(abs_dir.parts[2:])
 #init
 mkdir_p(record_dir)
 

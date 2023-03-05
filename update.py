@@ -39,6 +39,7 @@ dir_to_url = lambda abs_dir: "https://raw.githubusercontent.com/"+os.environ['GI
 mkdir_p(record_dir)
 
 with open(index_html, "w+") as f_index_html:
+    f_index_html.write('<!DOCTYPE html>\n')
     for f in os.listdir(list_dir):
         print(f)
         f_stem = Path(f).stem

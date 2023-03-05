@@ -68,7 +68,7 @@ with open(index_html, "w+") as f_index_html:
                         img_url = dir_to_url(output_img_dir)
                         summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
                         summary_md_f.write('![{}]({})\n'.format(stock_name, img_url))
-            summary_html_url = dir_to_url(summary_md_abs_dir)
+            summary_html_url = dir_to_url(summary_html_abs_dir)
             f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
 
 exit(1)

@@ -1,5 +1,4 @@
-on:
-  push
+on: push
   #schedule:
   #- cron:  '5 * * * *'
   #- cron:  '0 1-13 * * 1-5'

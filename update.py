@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import os
 
 index_html = Path("./index.html").resolve()
+index_md = Path("./index.md").resolve()
 record_dir = Path("./record").resolve()
 list_dir = Path("./stock_list").resolve()
 img_dir = Path("image")
@@ -43,37 +44,41 @@ dir_to_md = lambda abs_dir: '/'+'/'.join(abs_dir.parts[3:])
 mkdir_p(record_dir)
 
 with open(index_html, "w+") as f_index_html:
-    f_index_html.write('<!DOCTYPE html>\n')
-    for f in os.listdir(list_dir):
-        print(f)
-        f_stem = Path(f).stem
+    with open(index_md, "w+") as f_index_md:
 
-        f_set_dir = record_dir.joinpath(f_stem)
-        mkdir_p(f_set_dir)
+        f_index_html.write('<!DOCTYPE html>\n')
+        for f in os.listdir(list_dir):
+            print(f)
+            f_stem = Path(f).stem
 
-        summary_md_abs_dir = f_set_dir.joinpath(summary_md_dir)
-        summary_html_abs_dir = f_set_dir.joinpath(summary_html_dir)
+            f_set_dir = record_dir.joinpath(f_stem)
+            mkdir_p(f_set_dir)
 
-        with open(summary_md_abs_dir, "w+") as summary_md_f:
-            with open(summary_html_abs_dir, "w+") as summary_html_f:
+            summary_html_abs_dir = f_set_dir.joinpath(summary_html_dir)
+            summary_md_abs_dir = f_set_dir.joinpath(summary_md_dir)
 
-                img_dir = f_set_dir.joinpath(img_dir)
-                mkdir_p(img_dir)
+            with open(summary_md_abs_dir, "w+") as summary_md_f:
+                with open(summary_html_abs_dir, "w+") as summary_html_f:
 
-                with open(list_dir.joinpath(f)) as file:
-                    for line in file:
-                        os.chdir(f_set_dir.joinpath(img_dir))
-                        stock_name = line.strip()
-                        output_img_dir = update_stock(stock_name)
-                        os.chdir(record_dir)
+                    img_dir = f_set_dir.joinpath(img_dir)
+                    mkdir_p(img_dir)
 
-                        img_url = dir_to_url(output_img_dir)
-                        img_md = dir_to_md(output_img_dir)
-                        summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
-                        summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
+                    with open(list_dir.joinpath(f)) as file:
+                        for line in file:
+                            os.chdir(f_set_dir.joinpath(img_dir))
+                            stock_name = line.strip()
+                            output_img_dir = update_stock(stock_name)
+                            os.chdir(record_dir)
 
-            summary_html_url = dir_to_url(summary_html_abs_dir)
-            f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
+                            img_url = dir_to_url(output_img_dir)
+                            img_md = dir_to_md(output_img_dir)
+                            summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
+                            summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
+
+                summary_html_url = dir_to_url(summary_html_abs_dir)
+                summary_html_md = dir_to_md(summary_md_abs_dir)
+                f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
+                f_index_md.write('![{}]({})'.format(f_stem, summary_html_md))
 
 exit(1)
 

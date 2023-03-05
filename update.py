@@ -29,11 +29,12 @@ def plot_graph(name, hist):
     plt.clf()
     return img_name
 
-def update_stock(name):
+def update_stock(name, my_price, hold_n):
     ticket = yf.Ticker(name)
     hist = ticket.history(period="7d")
     hist['Average'] = hist[['High','Low']].mean(axis=1)
     img_name = plot_graph(name, hist)
+    print(hist['Close'])
     return Path(img_name).resolve()
 
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
@@ -49,7 +50,6 @@ with open(index_html, "w+") as f_index_html:
         f_index_html.write('<!DOCTYPE html>\n')
         for f_name in os.listdir(list_dir):
             f_dir = list_dir.joinpath(f_name)
-            print(f_dir)
 
             f_stem = f_dir.stem
 
@@ -65,12 +65,14 @@ with open(index_html, "w+") as f_index_html:
                     img_dir = f_set_dir.joinpath(img_dir)
                     mkdir_p(img_dir)
 
-                    df_stock_list = pd.read_csv(f_dir, header=None, names=['Name', 'My_price', 'Hold_n'])
-                    print(df_stock_list)
-                    for name in df_stock_list['Name']:
+                    df_stock_list = pd.read_csv(f_dir, header=None, names=['Name', 'My_price', 'Hold_n'], sep="\s+", index_col=0)
+
+                    for name, row in df_stock_list.iterrows():
+                        #my_price = df_stock_list[df_stock_list['Name'] == name]
+
                         os.chdir(f_set_dir.joinpath(img_dir))
                         stock_name = name.strip()
-                        output_img_dir = update_stock(stock_name)
+                        output_img_dir = update_stock(stock_name, row['My_price'], row['Hold_n'])
                         os.chdir(record_dir)
 
                         img_url = dir_to_url(output_img_dir)

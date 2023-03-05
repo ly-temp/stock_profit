@@ -54,7 +54,7 @@ for f in os.listdir(list_dir):
                 stock_name = line.strip()
                 output_img_dir = update_stock(stock_name)
                 os.chdir(record_dir)
-                img_url = "https://raw.githubusercontent.com/"+'/'.join(output_img_dir.parts[2:])
+                img_url = "https://raw.githubusercontent.com/"+os.environ['GITHUB_REPOSITORY']+'/'.join(output_img_dir.parts[3:])
                 summary_f.write("![{}]({})\n".format(stock_name, img_url))
     
 

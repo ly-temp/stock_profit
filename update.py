@@ -8,7 +8,7 @@ import os
 record_dir = Path("./record").resolve()
 list_dir = Path("./stock_list").resolve()
 img_dir = Path("image")
-summary_dir = Path("summary.html")
+summary_dir = Path("summary.md")
 
 def plot_graph(name, hist):
     img_name = name+'.png'

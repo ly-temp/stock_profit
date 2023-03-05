@@ -9,7 +9,9 @@ index_html = Path("./index.html").resolve()
 record_dir = Path("./record").resolve()
 list_dir = Path("./stock_list").resolve()
 img_dir = Path("image")
-summary_dir = Path("summary.md")
+summary_md_dir = Path("summary.md")
+summary_html_dir = Path("summary.html")
+
 
 def plot_graph(name, hist):
     img_name = name+'.png'
@@ -48,22 +50,26 @@ with open(index_html, "w+") as f_index_html:
         f_set_dir = record_dir.joinpath(f_stem)
         mkdir_p(f_set_dir)
 
-        summary_abs_dir = f_set_dir.joinpath(summary_dir)
-        with open(summary_abs_dir, "w+") as summary_f:
+        summary_md_abs_dir = f_set_dir.joinpath(summary_md_dir)
+        summary_html_abs_dir = f_set_dir.joinpath(summary_html_dir)
 
-            img_dir = f_set_dir.joinpath(img_dir)
-            mkdir_p(img_dir)
+        with open(summary_md_abs_dir, "w+") as summary_md_f:
+            with open(summary_html_abs_dir, "w+") as summary_html_f:
 
-            with open(list_dir.joinpath(f)) as file:
-                for line in file:
-                    os.chdir(f_set_dir.joinpath(img_dir))
-                    stock_name = line.strip()
-                    output_img_dir = update_stock(stock_name)
-                    os.chdir(record_dir)
-                    img_url = dir_to_url(output_img_dir)
-                    summary_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
-        summary_url = dir_to_url(summary_abs_dir)
-        f_index_html.write('<a href="{}">{}</a>'.format(summary_url, f_stem))
+                img_dir = f_set_dir.joinpath(img_dir)
+                mkdir_p(img_dir)
+
+                with open(list_dir.joinpath(f)) as file:
+                    for line in file:
+                        os.chdir(f_set_dir.joinpath(img_dir))
+                        stock_name = line.strip()
+                        output_img_dir = update_stock(stock_name)
+                        os.chdir(record_dir)
+                        img_url = dir_to_url(output_img_dir)
+                        summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
+                        summary_md_f.write('![{}]({})\n'.format(stock_name, img_url))
+            summary_html_url = dir_to_url(summary_md_abs_dir)
+            f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
 
 exit(1)
 

@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         run: |
         date > generated.txt
         git config user.name github-actions

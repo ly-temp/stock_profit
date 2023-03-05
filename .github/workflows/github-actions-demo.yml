@@ -1,19 +1,16 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   schedule:
-    - cron:  '5 * * * *'
-    #- cron:  '0 1-13 * * 1-5'
+  - cron:  '5 * * * *'
+  #- cron:  '0 1-13 * * 1-5'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: update
-        uses: actions/checkout@v3
-        run: |
-        date > generated.txt
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add .
-        git commit -m "generated"
-        git push            
+      - uses: actions/checkout@v3
+      - run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push

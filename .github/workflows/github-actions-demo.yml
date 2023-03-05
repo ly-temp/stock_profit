@@ -3,7 +3,7 @@ on: push
   #- cron:  '5 * * * *'
   #- cron:  '0 1-13 * * 1-5'
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

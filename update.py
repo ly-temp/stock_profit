@@ -47,9 +47,11 @@ with open(index_html, "w+") as f_index_html:
     with open(index_md, "w+") as f_index_md:
 
         f_index_html.write('<!DOCTYPE html>\n')
-        for f in os.listdir(list_dir):
-            print(f)
-            f_stem = Path(f).stem
+        for f_name in os.listdir(list_dir):
+            f_dir = list_dir.joinpath(f_name)
+            print(f_dir)
+
+            f_stem = f_dir.stem
 
             f_set_dir = record_dir.joinpath(f_stem)
             mkdir_p(f_set_dir)
@@ -63,17 +65,18 @@ with open(index_html, "w+") as f_index_html:
                     img_dir = f_set_dir.joinpath(img_dir)
                     mkdir_p(img_dir)
 
-                    with open(list_dir.joinpath(f)) as file:
-                        for line in file:
-                            os.chdir(f_set_dir.joinpath(img_dir))
-                            stock_name = line.strip()
-                            output_img_dir = update_stock(stock_name)
-                            os.chdir(record_dir)
+                    df_stock_list = pd.read_csv(f_dir, header=None, names=['Name', 'My_price', 'Hold_n'])
+                    print(df_stock_list)
+                    for name in df_stock_list['Name']:
+                        os.chdir(f_set_dir.joinpath(img_dir))
+                        stock_name = name.strip()
+                        output_img_dir = update_stock(stock_name)
+                        os.chdir(record_dir)
 
-                            img_url = dir_to_url(output_img_dir)
-                            img_md = dir_to_md(output_img_dir)
-                            summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
-                            summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
+                        img_url = dir_to_url(output_img_dir)
+                        img_md = dir_to_md(output_img_dir)
+                        summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
+                        summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
 
                 summary_html_url = dir_to_url(summary_html_abs_dir)
                 summary_html_md = dir_to_md(summary_md_abs_dir)

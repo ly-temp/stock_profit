@@ -38,6 +38,7 @@ def update_stock(name):
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
 #dir_to_abs_url = lambda abs_dir: "https://raw.githubusercontent.com/"+os.environ['GITHUB_REPOSITORY']+'/main/'+'/'.join(abs_dir.parts[3:])
 dir_to_url = lambda abs_dir: '/'+'/'.join(abs_dir.parts[2:])
+dir_to_md = lambda abs_dir: '/'+'/'.join(abs_dir.parts[3:])
 #init
 mkdir_p(record_dir)
 
@@ -65,9 +66,12 @@ with open(index_html, "w+") as f_index_html:
                         stock_name = line.strip()
                         output_img_dir = update_stock(stock_name)
                         os.chdir(record_dir)
+
                         img_url = dir_to_url(output_img_dir)
+                        img_md = dir_to_md(output_img_dir)
                         summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
-                        summary_md_f.write('![{}]({})\n'.format(stock_name, img_url))
+                        summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
+
             summary_html_url = dir_to_url(summary_html_abs_dir)
             f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
 

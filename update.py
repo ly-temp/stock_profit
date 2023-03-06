@@ -122,11 +122,11 @@ with open(index_md, "w+") as f_index_md:
                     write_img(summary_md_f, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
 
                 summary_md_f.write(f"## {name}:\n#### {stock_1m['longname']}\n")
-                summary_md_f.write('price|profit|data\n:---:|:---:|:---:\n')
+                summary_md_f.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
                 write_stock(stock_1m)
-                summary_md_f.write('\n')
+                summary_md_f.write('|\n|')
                 write_stock(stock_7d)
-                summary_md_f.write('\n---\n')
+                summary_md_f.write('|\n---\n')
 
             summary_md_rel_dir = Path(record_dir.stem).joinpath(f_set_dir, summary_md_dir)
             write_link(f_index_md, summary_md_rel_dir, f_set_dir)

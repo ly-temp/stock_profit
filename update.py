@@ -136,7 +136,7 @@ with open(index_md, "w+") as f_index_md:
                 last_profit = '%.2f' % ((row['My_price'] - last_record['Close'])*row['Hold_n'])
                 profit_percentage = '%.2f' % ((row['My_price'] - last_record['Close'])/row['My_price']*100)
 
-                summary_md_f_buffer.write(f"## {name} [{last_profit}][{profit_percentage}%]:\n#### {stock_30m['longname']}\n")
+                summary_md_f_buffer.write(f"## {name} [${last_profit}] [{profit_percentage}%]:\n#### {stock_30m['longname']}\n")
                 summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
                 write_stock(stock_30m)
                 summary_md_f_buffer.write('|\n|')

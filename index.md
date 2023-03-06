@@ -1,1 +1,1 @@
-[list_1](record/image/summary.md)
+[list_1](record/summary.md)

@@ -5,14 +5,11 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import os
 
-index_html = Path("./index.html").resolve()
 index_md = Path("./index.md").resolve()
 record_dir = Path("./record").resolve()
 list_dir = Path("./stock_list").resolve()
 img_dir = Path("image")
 summary_md_dir = Path("summary.md")
-summary_html_dir = Path("summary.html")
-
 
 def get_yahoo_longname(symbol):
     import urllib
@@ -69,23 +66,27 @@ update_stock_7d = lambda name, my_price, hold_n: update_stock(name, my_price, ho
 update_stock_1m = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "1d", "30m", "%H:%M")
 
 dir_to_url = lambda abs_dir: '/'+'/'.join(abs_dir.parts[2:])
-dir_to_md = lambda abs_dir: '/'+'/'.join(abs_dir.parts[3:])
+rel_dir_to_md = lambda rel_dir: '/'.join(rel_dir.parts[3:])
 
-def write_html(html_f, dir, display_text, type):
-    url = dir_to_url(dir)
-    match type:
-        case 'a':
-            html_f.write('<a href="{}">{}</a>'.format(url, display_text))
-        case 'i':
-            html_f.write('<img src="{}" alt="{}"/>\n'.format(url, display_text))
+#def write_html(html_f, dir, display_text, type):
+#    url = dir_to_url(dir)
+#    match type:
+#        case 'a':
+#            html_f.write('<a href="{}">{}</a>'.format(url, display_text))
+#        case 'i':
+#            html_f.write('<img src="{}" alt="{}"/>\n'.format(url, display_text))
 
-def write_md(md_f, dir, display_text):
-    md = dir_to_md(dir)
-    md_f.write('![{}]({})'.format(display_text, md))
+def write_link(md_f, dir, display_text):
+    md = rel_dir_to_md(dir)
+    md_f.write('[{}]({})'.format(display_text, md))
 
-def write_html_md(html_f, md_f, img_dir, display_text, type):
-    write_html(html_f, img_dir, display_text, type)
-    write_md(md_f, img_dir, display_text)
+def write_img(md_f, dir, display_text):
+    md_f.write('!')
+    write_link(md_f, dir, display_text)
+
+#def write_html_md(html_f, md_f, img_dir, display_text, type):
+#    write_html(html_f, img_dir, display_text, type)
+#    write_md(md_f, img_dir, display_text)
 
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
 
@@ -93,66 +94,58 @@ mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
 #init
 mkdir_p(record_dir)
 
-with open(index_html, "w+") as f_index_html:
-    with open(index_md, "w+") as f_index_md:
+with open(index_md, "w+") as f_index_md:
+    for f_name in os.listdir(list_dir):
+        f_dir = list_dir.joinpath(f_name)
 
-        f_index_html.write('<!DOCTYPE html>\n')
-        for f_name in os.listdir(list_dir):
-            f_dir = list_dir.joinpath(f_name)
+        f_stem = f_dir.stem
 
-            f_stem = f_dir.stem
+        f_set_dir = record_dir.joinpath(f_stem)
+        mkdir_p(f_set_dir)
 
-            f_set_dir = record_dir.joinpath(f_stem)
-            mkdir_p(f_set_dir)
+        summary_md_abs_dir = f_set_dir.joinpath(summary_md_dir)
 
-            summary_html_abs_dir = f_set_dir.joinpath(summary_html_dir)
-            summary_md_abs_dir = f_set_dir.joinpath(summary_md_dir)
+        with open(summary_md_abs_dir, "w+") as summary_md_f:
+            img_dir = f_set_dir.joinpath(img_dir)
+            mkdir_p(img_dir)
 
-            with open(summary_md_abs_dir, "w+") as summary_md_f:
-                with open(summary_html_abs_dir, "w+") as summary_html_f:
+            df_stock_list = pd.read_csv(f_dir, header=None, names=['Name', 'My_price', 'Hold_n'], sep="\s+", index_col=0)
 
-                    img_dir = f_set_dir.joinpath(img_dir)
-                    mkdir_p(img_dir)
+            for name, row in df_stock_list.iterrows():
+                #my_price = df_stock_list[df_stock_list['Name'] == name]
 
-                    df_stock_list = pd.read_csv(f_dir, header=None, names=['Name', 'My_price', 'Hold_n'], sep="\s+", index_col=0)
+                os.chdir(f_set_dir.joinpath(img_dir))
+                stock_name = name.strip()
 
-                    for name, row in df_stock_list.iterrows():
-                        #my_price = df_stock_list[df_stock_list['Name'] == name]
+                stock_1m = update_stock_1m(stock_name, row['My_price'], row['Hold_n'])
+                stock_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
 
-                        os.chdir(f_set_dir.joinpath(img_dir))
-                        stock_name = name.strip()
+                os.chdir(record_dir)
 
-                        stock_1m = update_stock_1m(stock_name, row['My_price'], row['Hold_n'])
-                        stock_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
+                def write_stock(stock_data):
+                    write_img(summary_md_f, stock_data['img_price_dir'], "price: "+stock_data['longname'])
+                    summary_md_f.write('|')
+                    write_img(summary_md_f, stock_data['img_profit_dir'], "profit: "+stock_data['longname'])
 
-                        os.chdir(record_dir)
+                summary_md_f.write('price|profit|data\n:-:|:-:|:-:\n')
+                write_stock(stock_1m)
+                summary_md_f.write('\n')
+                write_stock(stock_7d)
+                summary_md_f.write('\n---\n')
 
-                        def write_stock(stock_data):
-                            write_html_md(summary_html_f, summary_md_f, stock_data['img_price_dir'], "price: "+stock_data['longname'], 'i')
-                            summary_md_f.write('|')
-                            write_html_md(summary_html_f, summary_md_f, stock_data['img_profit_dir'], "profit: "+stock_data['longname'], 'i')
+                #write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
+                #write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')
 
-                        summary_md_f.write('price|profit|data\n:-:|:-:|:-:\n')
-                        write_stock(stock_1m)
-                        summary_md_f.write('\n')
-                        write_stock(stock_7d)
-                        summary_md_f.write('\n---\n')
+                #img_url = dir_to_url(output_img_price_7d_dir)
+                #img_md = dir_to_md(output_img_price_7d_dir)
+                #summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
+                #summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
 
-                        #write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
-                        #write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')
+            write_link(f_index_md, summary_md_abs_dir, f_stem)
+            #summary_html_url = dir_to_url(summary_html_abs_dir)
+            #summary_html_md = dir_to_md(summary_md_abs_dir)
+            #f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
+            #f_index_md.write('![{}]({})'.format(f_stem, summary_html_md))
 
-                        #img_url = dir_to_url(output_img_price_7d_dir)
-                        #img_md = dir_to_md(output_img_price_7d_dir)
-                        #summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
-                        #summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
-
-                write_html(f_index_html, summary_html_abs_dir, f_stem, 'a')
-                write_md(f_index_md, summary_md_abs_dir, f_stem)
-                #summary_html_url = dir_to_url(summary_html_abs_dir)
-                #summary_html_md = dir_to_md(summary_md_abs_dir)
-                #f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
-                #f_index_md.write('![{}]({})'.format(f_stem, summary_html_md))
-
-exit(1)
 
 

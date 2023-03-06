@@ -4,6 +4,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import matplotlib.pyplot as plt
 import os
+from io import StringIO
+import shutil
 
 root_dir = Path("./").resolve()
 index_md = Path("./index.md").resolve()
@@ -64,7 +66,7 @@ def update_stock(name, my_price, hold_n, period, interval, plot_datetime_format)
             'longname': longname}
 
 update_stock_7d = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "7d", "1d", "%D")
-update_stock_1m = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "1d", "30m", "%H:%M")
+update_stock_30m = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "1d", "30m", "%H:%M")
 
 #rel_dir_to_md = lambda rel_dir: '/'.join(Path(rel_dir).parts[3:])
 
@@ -82,6 +84,7 @@ def write_link(md_f, rel_dir, display_text):
 def write_img(md_f, rel_dir, display_text):
     md_f.write('!')
     write_link(md_f, rel_dir, display_text)
+
 
 #def write_html_md(html_f, md_f, img_dir, display_text, type):
 #    write_html(html_f, img_dir, display_text, type)
@@ -105,13 +108,14 @@ with open(index_md, "w+") as f_index_md:
 
             df_stock_list = pd.read_csv(list_dir.joinpath(f_name), header=None, names=['Name', 'My_price', 'Hold_n'], sep="\s+", index_col=0)
 
+            summary_md_f_buffer = StringIO()
             for name, row in df_stock_list.iterrows():
                 #my_price = df_stock_list[df_stock_list['Name'] == name]
 
                 os.chdir(img_dir)
                 stock_name = name.strip()
 
-                stock_1m = update_stock_1m(stock_name, row['My_price'], row['Hold_n'])
+                stock_30m = update_stock_30m(stock_name, row['My_price'], row['Hold_n'])
                 stock_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
 
                 os.chdir("../")
@@ -120,20 +124,28 @@ with open(index_md, "w+") as f_index_md:
                     round_hist = stock_data['hist']
                     round_hist['Profit'] = round_hist['Profit'].map('{:.2f}'.format)
                     profit_table = round_hist['Profit'].reset_index().to_html(index=False).replace('\n', '')
-                    summary_md_f.write(f"|{profit_table}")
+                    summary_md_f_buffer.write(f"|{profit_table}")
 
                 def write_stock(stock_data):
-                    write_img(summary_md_f, img_dir.joinpath(stock_data['img_price_dir']), "price: "+stock_data['longname'])
-                    summary_md_f.write('|')
-                    write_img(summary_md_f, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
+                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_price_dir']), "price: "+stock_data['longname'])
+                    summary_md_f_buffer.write('|')
+                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
                     write_profit_table(stock_data)
 
-                summary_md_f.write(f"## {name}:\n#### {stock_1m['longname']}\n")
-                summary_md_f.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
-                write_stock(stock_1m)
-                summary_md_f.write('|\n|')
+                last_record = stock_30m['hist'].iloc[-1]
+                last_profit = '%.2f' % ((row['My_price'] - last_record['Close'])*row['Hold_n'])
+                profit_percentage = '%.2f' % ((row['My_price'] - last_record['Close'])/row['My_price']*100)
+
+                summary_md_f_buffer.write(f"## {name} [{last_profit}][{profit_percentage}%]:\n#### {stock_30m['longname']}\n")
+                summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
+                write_stock(stock_30m)
+                summary_md_f_buffer.write('|\n|')
                 write_stock(stock_7d)
-                summary_md_f.write('|\n---\n')
+                summary_md_f_buffer.write('|\n---\n')
+
+            summary_md_f_buffer.seek(0)
+            shutil.copyfileobj(summary_md_f_buffer, summary_md_f, -1)
+            summary_md_f_buffer.close()
 
             summary_md_rel_dir = Path(record_dir.stem).joinpath(f_set_dir, summary_md_dir)
             write_link(f_index_md, summary_md_rel_dir, f_set_dir)

@@ -1,5 +1,5 @@
 ## Net Profit
-### :heavy_minus_sign: -14429.00
+### -14429.00
 |30m/1d|1d/7d|
 |:---:|:---:|
 |![Net_Profit_1d-30m](Net_Profit_1d-30m.png)|![Net_Profit_7d-1d](Net_Profit_7d-1d.png)|

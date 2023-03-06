@@ -116,10 +116,16 @@ with open(index_md, "w+") as f_index_md:
 
                 os.chdir("../")
 
+                def write_profit_table(stock_data):
+                    hist = stock_data['hist']
+                    profit_table = hist['Profit'].reset_index().to_html()
+                    summary_md_f.write(f"|{profit_table}")
+
                 def write_stock(stock_data):
                     write_img(summary_md_f, img_dir.joinpath(stock_data['img_price_dir']), "price: "+stock_data['longname'])
                     summary_md_f.write('|')
                     write_img(summary_md_f, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
+                    write_profit_table(stock_data)
 
                 summary_md_f.write(f"## {name}:\n#### {stock_1m['longname']}\n")
                 summary_md_f.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')

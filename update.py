@@ -135,7 +135,8 @@ with open(index_md, "w+") as f_index_md:
                 #summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
                 #summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
 
-            write_link(f_index_md, summary_md_dir, f_set_dir)
+            summary_md_rel_dir = Path(record_dir.stem).joinpath(img_dir, summary_md_dir)
+            write_link(f_index_md, summary_md_rel_dir, f_set_dir)
             #summary_html_url = dir_to_url(summary_html_abs_dir)
             #summary_html_md = dir_to_md(summary_md_abs_dir)
             #f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))

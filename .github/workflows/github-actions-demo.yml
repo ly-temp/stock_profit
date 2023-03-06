@@ -3,13 +3,13 @@ on: push
   #- cron:  '30 * * * *'
   #- cron:  '0 1-13 * * 1-5'
 jobs:
-  update:
+  update_stock:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: |
           mkdir -p log
-          TZ='Asia/Hong_kong' date >> log/log.txt
+          TZ='Asia/Hong_kong' date '+%Y-%m-%d %H:%M:%S' >> log/log.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add log

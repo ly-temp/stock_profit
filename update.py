@@ -54,7 +54,7 @@ def update_stock(name, company_name, my_price, hold_n, setting):
 
     hist = ticket.history(period=period, interval=interval)
     hist['Average'] = hist[['High','Low']].mean(axis=1)
-    hist['Profit'] = (my_price - hist['Close'])*hold_n
+    hist['Profit'] = (hist['Close'] - my_price)*hold_n
 
     index_name = hist.index.name
     hist.reset_index(inplace=True)
@@ -158,12 +158,13 @@ with open(index_md, "w+") as f_index_md:
                     hist_profit_list[i] = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])
 
                 #choose stock_setting_list[0] as most recent record
+                last_profit_per_n = last_record['Close'] - row['My_price']
                 last_record = stock_data_list[0]['hist'].iloc[-1]
-                last_profit = ((row['My_price'] - last_record['Close'])*row['Hold_n'])
+                last_profit = (last_profit_per_n*row['Hold_n'])
                 last_profit_list.append(last_profit)
 
                 round_last_profit = round_standarize(last_profit)
-                profit_percentage = round_standarize(((row['My_price'] - last_record['Close'])/row['My_price']*100))
+                profit_percentage = round_standarize(last_profit_per_n/row['My_price']*100)
 
                 summary_md_f_buffer.write(f"## {name} [${round_last_profit}] [{profit_percentage}%]:\n#### {company_name}\n")
                 summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')

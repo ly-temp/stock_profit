@@ -121,7 +121,7 @@ with open(index_md, "w+") as f_index_md:
                     summary_md_f.write('|')
                     write_img(summary_md_f, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
 
-                summary_md_f.write(f"##{name}: {stock_1m['longname']}\n")
+                summary_md_f.write(f"## {name}: {stock_1m['longname']}\n")
                 summary_md_f.write('price|profit|data\n:-:|:-:|:-:\n')
                 write_stock(stock_1m)
                 summary_md_f.write('\n')

@@ -5,6 +5,6 @@ price|profit|data
 ---
 price|profit|data
 :-:|:-:|:-:
-![price: Hang Seng TECH Index ETF](/record/list_1/image/3032.HK_1d-30m.png)|![profit: Hang Seng TECH Index ETF](/record/list_1/image/3032.HK_1d-30m_profit.png)
-![price: Hang Seng TECH Index ETF](/record/list_1/image/3032.HK_7d-1d.png)|![profit: Hang Seng TECH Index ETF](/record/list_1/image/3032.HK_7d-1d_profit.png)
+![price: CK Hutchison Holdings Limited](/record/list_1/image/0001.HK_1d-30m.png)|![profit: CK Hutchison Holdings Limited](/record/list_1/image/0001.HK_1d-30m_profit.png)
+![price: CK Hutchison Holdings Limited](/record/list_1/image/0001.HK_7d-1d.png)|![profit: CK Hutchison Holdings Limited](/record/list_1/image/0001.HK_7d-1d_profit.png)
 ---

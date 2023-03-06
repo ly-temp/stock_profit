@@ -14,6 +14,8 @@ list_dir = Path("./stock_list").resolve()
 img_dir = Path("./image")
 summary_md_dir = Path("summary.md")
 
+
+
 def get_yahoo_longname(symbol):
     import urllib
     import json
@@ -108,6 +110,8 @@ with open(index_md, "w+") as f_index_md:
 
             df_stock_list = pd.read_csv(list_dir.joinpath(f_name), header=None, names=['Name', 'My_price', 'Hold_n'], sep="\s+", index_col=0)
 
+            last_profit_list = []
+            hist_profit_list = [pd.DataFrame()]*2     #[0]: 30m [1]: 7d
             summary_md_f_buffer = StringIO()
             for name, row in df_stock_list.iterrows():
                 #my_price = df_stock_list[df_stock_list['Name'] == name]
@@ -132,8 +136,20 @@ with open(index_md, "w+") as f_index_md:
                     write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
                     write_profit_table(stock_data)
 
+                def append_hist_profit(hist_list, add_list):
+                    if hist_list.empty:
+                        return add_list
+                    return [sum(x) for x in zip([hist_list, add_list])]
+
+                hist_profit_list[0] = append_hist_profit(hist_profit_list[0], stock_30m['hist']['Profit'])
+                hist_profit_list[1] = append_hist_profit(hist_profit_list[1], stock_7d['hist']['Profit'])
+
+
                 last_record = stock_30m['hist'].iloc[-1]
-                last_profit = '%.2f' % ((row['My_price'] - last_record['Close'])*row['Hold_n'])
+                last_profit = ((row['My_price'] - last_record['Close'])*row['Hold_n'])
+                last_profit_list.append(last_profit)
+
+                round_last_profit = '%.2f' % last_profit
                 profit_percentage = '%.2f' % ((row['My_price'] - last_record['Close'])/row['My_price']*100)
 
                 summary_md_f_buffer.write(f"## {name} [${last_profit}] [{profit_percentage}%]:\n#### {stock_30m['longname']}\n")

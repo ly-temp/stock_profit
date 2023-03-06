@@ -132,7 +132,7 @@ with open(index_html, "w+") as f_index_html:
                             summary_md_f.write('|')
                             write_html_md(summary_html_f, summary_md_f, stock_data['img_profit_dir'], "profit: "+stock_data['longname'], 'i')
 
-                        summary_md_f.write('price|profit\n:-:|:-:\n')
+                        summary_md_f.write('price|profit|data\n:-:|:-:|:-:\n')
                         write_stock(stock_1m)
                         summary_md_f.write('\n')
                         write_stock(stock_7d)

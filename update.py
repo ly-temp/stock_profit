@@ -14,8 +14,17 @@ summary_md_dir = Path("summary.md")
 summary_html_dir = Path("summary.html")
 
 
-def default_plt_save(name):
+def get_yahoo_longname(symbol):
+    import urllib
+    import json
+    response = urllib.request.urlopen(f'https://query1.finance.yahoo.com/v1/finance/search?q={symbol}')
+    content = response.read()
+    data = json.loads(content.decode('utf8'))['quotes'][0]['longname']
+    return data
+
+def default_plt_save(name, title):
     img_name = name+'.png'
+    plt.title(title)
     plt.grid()
     plt.legend()
     plt.xticks(rotation=20, fontsize = 'medium')
@@ -23,20 +32,22 @@ def default_plt_save(name):
     plt.clf()
     return Path(img_name).resolve()
 
-def plot_price(name, hist):
+def plot_price(name, hist, title):
     plt.plot(hist['High'], marker="o", color="red", label="High")
     plt.plot(hist['Low'], marker="o", color="green", label="Low")
     plt.plot(hist['Average'], marker="o", color="brown", label="Average")
     #plt.ylabel('price')
     #plt.xlabel('date')
-    return default_plt_save(name)
+    return default_plt_save(name, title)
 
-def plot_profit(name, hist):
+def plot_profit(name, hist, title):
     plt.plot(hist['Profit'], marker="s", color="black", label="Profit")
-    return default_plt_save(name)
+    return default_plt_save(name, title)
 
 def update_stock(name, my_price, hold_n, period, interval, plot_datetime_format):
     ticket = yf.Ticker(name)
+    longname = get_yahoo_longname(name)
+
     hist = ticket.history(period=period, interval=interval)
     hist['Average'] = hist[['High','Low']].mean(axis=1)
     hist['Profit'] = (my_price - hist['Close'])*hold_n
@@ -47,9 +58,12 @@ def update_stock(name, my_price, hold_n, period, interval, plot_datetime_format)
     hist.set_index(index_name, inplace=True)
 
     img_prefix = name+"_"+period+"-"+interval
-    img_price_dir = plot_price(img_prefix, hist)
-    img_profit_dir = plot_profit(img_prefix+'_profit', hist)
-    return img_price_dir, img_profit_dir, hist
+    img_price_dir = plot_price(img_prefix, hist, longname)
+    img_profit_dir = plot_profit(img_prefix+'_profit', hist, longname)
+    return {'img_price_dir': img_price_dir,
+            'img_profit_dir': img_profit_dir, 
+            'hist': hist,
+            'longname': longname}
 
 update_stock_7d = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "7d", "1d", "%D")
 update_stock_1m = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "1d", "30m", "%H:%M")
@@ -108,13 +122,20 @@ with open(index_html, "w+") as f_index_html:
                         os.chdir(f_set_dir.joinpath(img_dir))
                         stock_name = name.strip()
 
-                        output_img_price_1m_dir, output_img_profit_1m_dir, hist_1m = update_stock_1m(stock_name, row['My_price'], row['Hold_n'])
-                        output_img_price_7d_dir, output_img_profit_7d_dir, hist_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
+                        stock_1m = update_stock_1m(stock_name, row['My_price'], row['Hold_n'])
+                        stock_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
 
                         os.chdir(record_dir)
 
-                        write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
-                        write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')
+                        def write_stock(stock_data):
+                            write_html_md(summary_html_f, summary_md_f, stock_data['img_price_dir'], "price: "+stock_data['longname'], 'i')
+                            write_html_md(summary_html_f, summary_md_f, stock_data['img_profit_dir'], "profit: "+stock_data['longname'], 'i')
+
+                        write_stock(stock_1m)
+                        write_stock(stock_7d)
+
+                        #write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
+                        #write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')
 
                         #img_url = dir_to_url(output_img_price_7d_dir)
                         #img_md = dir_to_md(output_img_price_7d_dir)

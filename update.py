@@ -167,7 +167,9 @@ with open(index_md, "w+") as f_index_md:
                 round_last_profit = round_standarize(last_profit)
                 profit_percentage = round_standarize(last_profit_per_n/row['My_price']*100)
 
-                summary_md_f_buffer.write(f"## {name} [${round_last_profit}] [{profit_percentage}%]:\n#### {company_name}\n")
+                last_price_emoji = get_profit_emoji(round_last_profit)
+
+                summary_md_f_buffer.write(f"## {name} [{last_price_emoji}] [${round_last_profit}] [{profit_percentage}%]:\n#### {company_name}\n")
                 summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
                 for stock_data in stock_data_list:
                     write_stock(stock_data)

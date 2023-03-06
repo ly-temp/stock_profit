@@ -1,1 +1,1 @@
-[list_1](record/summary.md)
+[list_1](record/list_1/summary.md)

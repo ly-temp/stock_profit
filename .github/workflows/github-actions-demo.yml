@@ -8,7 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          chmod +x ./record
+          chmod +x ./startup.sh
+          ./startup.sh
           python update.py
           mkdir -p log
           TZ='Asia/Hong_kong' date '+%Y-%m-%d %H:%M:%S' >> log/log.txt

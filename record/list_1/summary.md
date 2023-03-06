@@ -1,5 +1,10 @@
 ## Net Profit
-## 3033.HK [$3946.000099182129] [65.77%]:
+### -14429.00
+|30m/1d|1d/7d|
+|:---:|:---:|
+|![Net_Profit_1d-30m](Net_Profit_1d-30m.png)|![Net_Profit_7d-1d](Net_Profit_7d-1d.png)|
+---
+## 3033.HK [$3946.00] [65.77%]:
 #### CSOP Hang Seng TECH Index ETF
 |price|profit|data|
 |:---:|:---:|:---:|
@@ -7,7 +12,7 @@
 |![price: CSOP Hang Seng TECH Index ETF](image/3033.HK_7d-1d.png)|![profit: CSOP Hang Seng TECH Index ETF](image/3033.HK_7d-1d_profit.png)|<table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th>Date</th>      <th>Profit</th>    </tr>  </thead>  <tbody>    <tr>      <td>02/24/23</td>      <td>4027.00</td>    </tr>    <tr>      <td>02/27/23</td>      <td>4045.00</td>    </tr>    <tr>      <td>02/28/23</td>      <td>4070.00</td>    </tr>    <tr>      <td>03/01/23</td>      <td>3939.00</td>    </tr>    <tr>      <td>03/02/23</td>      <td>3967.00</td>    </tr>    <tr>      <td>03/03/23</td>      <td>3925.00</td>    </tr>    <tr>      <td>03/06/23</td>      <td>3946.00</td>    </tr>  </tbody></table>|
 ||
 ---
-## 0001.HK [$-18375.0] [-306.25%]:
+## 0001.HK [$-18375.00] [-306.25%]:
 #### CK Hutchison Holdings Limited
 |price|profit|data|
 |:---:|:---:|:---:|

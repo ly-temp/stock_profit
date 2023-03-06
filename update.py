@@ -97,7 +97,7 @@ def write_img(md_f, rel_dir, display_text):
 #    write_md(md_f, img_dir, display_text)
 
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
-
+round_standarize = lambda value: "%.2f" % round(value, 2)
 
 #init
 mkdir_p(record_dir)
@@ -157,22 +157,39 @@ with open(index_md, "w+") as f_index_md:
                 last_profit = ((row['My_price'] - last_record['Close'])*row['Hold_n'])
                 last_profit_list.append(last_profit)
 
-                round_last_profit = '%.2f' % last_profit
-                profit_percentage = '%.2f' % ((row['My_price'] - last_record['Close'])/row['My_price']*100)
+                round_last_profit = round_standarize(last_profit)
+                profit_percentage = round_standarize(((row['My_price'] - last_record['Close'])/row['My_price']*100))
 
-                summary_md_f_buffer.write(f"## {name} [${last_profit}] [{profit_percentage}%]:\n#### {company_name}\n")
+                summary_md_f_buffer.write(f"## {name} [${round_last_profit}] [{profit_percentage}%]:\n#### {company_name}\n")
                 summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
                 for stock_data in stock_data_list:
                     write_stock(stock_data)
                     summary_md_f_buffer.write('|\n|')
                 summary_md_f_buffer.write('|\n---\n')
 
-            profit_img_dir = []
+            os.chdir(img_dir)
+            profit_img_dir_list = []
             for i in range(len(hist_profit_list)):
                 img_prefix = get_img_prefix_from_setting("Net_Profit", stock_setting_list[i])
-                profit_img_dir.append(plot_profit(img_prefix, hist_profit_list[i].to_frame(), img_prefix))
+                profit_img_dir_list.append(plot_profit(img_prefix, hist_profit_list[i].to_frame(), img_prefix))
+            os.chdir("../")
+
+            net_last_profit = round_standarize(sum(last_profit_list))
+
             net_profit_buff = StringIO()
-            net_profit_buff.write(f"## Net Profit\n### {}")
+            net_profit_buff.write(f"## Net Profit\n### {net_last_profit}\n")
+            for i, profit_img_dir in enumerate(profit_img_dir_list):
+                column_name = stock_setting_list[i][1] + "/" + stock_setting_list[i][0]
+                net_profit_buff.write(f"|{column_name}")
+            net_profit_buff.write("|\n")
+            for i in range(len(profit_img_dir_list)):
+                net_profit_buff.write("|:---:")
+            net_profit_buff.write("|\n")
+            for i, profit_img_dir in enumerate(profit_img_dir_list):
+                net_profit_buff.write("|")
+                write_img(net_profit_buff, profit_img_dir, Path(profit_img_dir).stem)
+            net_profit_buff.write("|\n---\n")
+
             net_profit_buff.seek(0)
             shutil.copyfileobj(net_profit_buff, summary_md_f, -1)
             net_profit_buff.close()

@@ -70,6 +70,11 @@ def update_stock(name, company_name, my_price, hold_n, setting):
             'hist': hist
             }
 
+def get_profit_emoji(profit):
+    if float(profit) < 0:
+        return ':heavy_minus_sign:'
+    return ':heavy_plus_sign:'
+
 stock_setting_list = [["1d", "30m", "%H:%M"], ["7d", "1d", "%D"]]
 
 update_stock_with_setting = lambda name, company_name, my_price, hold_n, stock_setting: update_stock(name, company_name, my_price, hold_n, stock_setting)
@@ -175,9 +180,10 @@ with open(index_md, "w+") as f_index_md:
             os.chdir("../")
 
             net_last_profit = round_standarize(sum(last_profit_list))
+            net_last_profit_emoji = get_profit_emoji(net_last_profit)   #check +/-, no need exact decimal place
 
             net_profit_buff = StringIO()
-            net_profit_buff.write(f"## Net Profit\n### {net_last_profit}\n")
+            net_profit_buff.write(f"## Net Profit {net_last_profit_emoji}\n### {net_last_profit}\n")
             for i, profit_img_dir in enumerate(profit_img_dir_list):
                 column_name = stock_setting_list[i][1] + "/" + stock_setting_list[i][0]
                 net_profit_buff.write(f"|{column_name}")
@@ -187,7 +193,7 @@ with open(index_md, "w+") as f_index_md:
             net_profit_buff.write("|\n")
             for i, profit_img_dir in enumerate(profit_img_dir_list):
                 net_profit_buff.write("|")
-                write_img(net_profit_buff, profit_img_dir, Path(profit_img_dir).stem)
+                write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
             net_profit_buff.write("|\n---\n")
 
             net_profit_buff.seek(0)
@@ -200,4 +206,5 @@ with open(index_md, "w+") as f_index_md:
 
             summary_md_rel_dir = Path(record_dir.stem).joinpath(f_set_dir, summary_md_dir)
             write_link(f_index_md, summary_md_rel_dir, f_set_dir)
+            f_index_md.write(f"[{net_last_profit}]\n")
 

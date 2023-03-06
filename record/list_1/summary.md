@@ -1,8 +1,8 @@
-## Net Profit
+## Net Profit :heavy_minus_sign:
 ### -14429.00
 |30m/1d|1d/7d|
 |:---:|:---:|
-|![Net_Profit_1d-30m](Net_Profit_1d-30m.png)|![Net_Profit_7d-1d](Net_Profit_7d-1d.png)|
+|![Net_Profit_1d-30m](image/Net_Profit_1d-30m.png)|![Net_Profit_7d-1d](image/Net_Profit_7d-1d.png)|
 ---
 ## 3033.HK [$3946.00] [65.77%]:
 #### CSOP Hang Seng TECH Index ETF

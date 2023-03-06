@@ -14,7 +14,8 @@ list_dir = Path("./stock_list").resolve()
 img_dir = Path("./image")
 summary_md_dir = Path("summary.md")
 
-shutil.rmtree(record_dir)
+if os.path.isdir(record_dir):
+    shutil.rmtree(record_dir)
 
 def get_yahoo_longname(symbol):
     import urllib

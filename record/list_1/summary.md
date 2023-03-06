@@ -1,4 +1,4 @@
-|a|
+|a||
 |Solarized dark             |  Solarized Ocean|
 :-:|:-:
 |![price: CSOP Hang Seng TECH Index ETF](/record/list_1/image/3033.HK_1d-30m.png) | ![profit: CSOP Hang Seng TECH Index ETF](/record/list_1/image/3033.HK_1d-30m_profit.png)|

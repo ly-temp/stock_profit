@@ -1,4 +1,4 @@
-## Net Profit :heavy_minus_sign:
+## Net Profit [:heavy_minus_sign:]:
 ### $-14429.00
 |30m / 1d|1d / 7d|
 |:---:|:---:|

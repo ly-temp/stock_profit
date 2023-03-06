@@ -117,8 +117,9 @@ with open(index_md, "w+") as f_index_md:
                 os.chdir("../")
 
                 def write_profit_table(stock_data):
-                    hist = stock_data['hist']
-                    profit_table = hist['Profit'].reset_index().to_html(index=False).replace('\n', '').replace('\t', '')
+                    round_hist = stock_data['hist']
+                    round_hist['Profit'] = round_hist['Profit'].map('{:.2f}'.format)
+                    profit_table = round_hist['Profit'].reset_index().to_html(index=False).replace('\n', '')
                     summary_md_f.write(f"|{profit_table}")
 
                 def write_stock(stock_data):

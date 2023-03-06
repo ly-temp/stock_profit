@@ -129,13 +129,14 @@ with open(index_html, "w+") as f_index_html:
 
                         def write_stock(stock_data):
                             write_html_md(summary_html_f, summary_md_f, stock_data['img_price_dir'], "price: "+stock_data['longname'], 'i')
+                            summary_md_f.write('|')
                             write_html_md(summary_html_f, summary_md_f, stock_data['img_profit_dir'], "profit: "+stock_data['longname'], 'i')
 
                         summary_md_f.write('price|profit\n:-:|:-:\n')
                         write_stock(stock_1m)
                         summary_md_f.write('|')
                         write_stock(stock_7d)
-                        summary_md_f.write('\n')
+                        summary_md_f.write('\n---\n')
 
                         #write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
                         #write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')

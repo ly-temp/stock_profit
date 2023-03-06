@@ -210,5 +210,5 @@ with open(index_md, "w+") as f_index_md:
 
             summary_md_rel_dir = Path(record_dir.stem).joinpath(f_set_dir, summary_md_dir)
             write_link(f_index_md, summary_md_rel_dir, f_set_dir)
-            f_index_md.write(f": [{net_last_profit_emoji}] [${net_last_profit}]\n")
+            f_index_md.write(f": [{net_last_profit_emoji}] [${net_last_profit}]  \n")
 

@@ -134,7 +134,7 @@ with open(index_html, "w+") as f_index_html:
 
                         summary_md_f.write('price|profit\n:-:|:-:\n')
                         write_stock(stock_1m)
-                        summary_md_f.write('|')
+                        summary_md_f.write('\n')
                         write_stock(stock_7d)
                         summary_md_f.write('\n---\n')
 

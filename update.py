@@ -77,7 +77,7 @@ update_stock_1m = lambda name, my_price, hold_n: update_stock(name, my_price, ho
 #            html_f.write('<img src="{}" alt="{}"/>\n'.format(url, display_text))
 
 def write_link(md_f, rel_dir, display_text):
-    md_f.write('[{}]({})'.format(display_text, rel_dir))
+    md_f.write(f"[{display_text}]({rel_dir})")
 
 def write_img(md_f, rel_dir, display_text):
     md_f.write('!')
@@ -121,23 +121,13 @@ with open(index_md, "w+") as f_index_md:
                     summary_md_f.write('|')
                     write_img(summary_md_f, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
 
+                summary_md_f.write(f"##{name}: {stock_1m['longname']}\n")
                 summary_md_f.write('price|profit|data\n:-:|:-:|:-:\n')
                 write_stock(stock_1m)
                 summary_md_f.write('\n')
                 write_stock(stock_7d)
                 summary_md_f.write('\n---\n')
 
-                #write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
-                #write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')
-
-                #img_url = dir_to_url(output_img_price_7d_dir)
-                #img_md = dir_to_md(output_img_price_7d_dir)
-                #summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))
-                #summary_md_f.write('![{}]({})\n'.format(stock_name, img_md))
-
             summary_md_rel_dir = Path(record_dir.stem).joinpath(f_set_dir, summary_md_dir)
             write_link(f_index_md, summary_md_rel_dir, f_set_dir)
-            #summary_html_url = dir_to_url(summary_html_abs_dir)
-            #summary_html_md = dir_to_md(summary_md_abs_dir)
-            #f_index_html.write('<a href="{}">{}</a>'.format(summary_html_url, f_stem))
-            #f_index_md.write('![{}]({})'.format(f_stem, summary_html_md))
+

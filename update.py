@@ -97,10 +97,11 @@ def write_img(md_f, rel_dir, display_text):
     md_f.write('!')
     write_link(md_f, rel_dir, display_text)
 
-
-#def write_html_md(html_f, md_f, img_dir, display_text, type):
-#    write_html(html_f, img_dir, display_text, type)
-#    write_md(md_f, img_dir, display_text)
+def write_profit_table(buffer, profit_hist):
+    #round_hist = stock_data['hist']
+    round_profit_hist = profit_hist['Profit'].map('{:.2f}'.format).copy()
+    profit_table = round_profit_hist.reset_index().to_html(index=False).replace('\n', '')
+    buffer.write(f"|{profit_table}")
 
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
 round_standarize = lambda value: "%.2f" % round(value, 2)
@@ -138,17 +139,13 @@ with open(index_md, "w+") as f_index_md:
 
                 os.chdir("../")
 
-                def write_profit_table(stock_data):
-                    round_hist = stock_data['hist']
-                    round_hist['Profit'] = round_hist['Profit'].map('{:.2f}'.format)
-                    profit_table = round_hist['Profit'].reset_index().to_html(index=False).replace('\n', '')
-                    summary_md_f_buffer.write(f"|{profit_table}")
+
 
                 def write_stock(stock_data):
                     write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_price_dir']), "price: "+company_name)
                     summary_md_f_buffer.write('|')
                     write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+company_name)
-                    write_profit_table(stock_data)
+                    write_profit_table(summary_md_f_buffer, stock_data['hist'])
 
                 def append_hist_profit(hist_list, add_list):
                     if hist_list.empty:
@@ -188,17 +185,16 @@ with open(index_md, "w+") as f_index_md:
 
             net_profit_buff = StringIO()
             net_profit_buff.write(f"## Net Profit [{net_last_profit_emoji}]:\n### ${net_last_profit}\n")
+            net_profit_buff.write("|type|graph|data|\n|:---:|:---:|:---:|\n")
             for i, profit_img_dir in enumerate(profit_img_dir_list):
-                column_name = stock_setting_list[i][1] + " / " + stock_setting_list[i][0]
-                net_profit_buff.write(f"|{column_name}")
-            net_profit_buff.write("|\n")
-            for i in range(len(profit_img_dir_list)):
-                net_profit_buff.write("|:---:")
-            net_profit_buff.write("|\n")
-            for i, profit_img_dir in enumerate(profit_img_dir_list):
-                net_profit_buff.write("|")
+                row_name = stock_setting_list[i][1] + " / " + stock_setting_list[i][0]
+                net_profit_buff.write(f"|{row_name}|")
+
                 write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
-            net_profit_buff.write("|\n---\n")
+                net_profit_buff.write("|\n")
+                write_profit_table(net_profit_buff, hist_profit_list[i].to_frame())
+                
+            net_profit_buff.write("---\n")
 
             net_profit_buff.seek(0)
             shutil.copyfileobj(net_profit_buff, summary_md_f, -1)

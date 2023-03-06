@@ -158,8 +158,8 @@ with open(index_md, "w+") as f_index_md:
                     hist_profit_list[i] = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])
 
                 #choose stock_setting_list[0] as most recent record
-                last_profit_per_n = last_record['Close'] - row['My_price']
                 last_record = stock_data_list[0]['hist'].iloc[-1]
+                last_profit_per_n = last_record['Close'] - row['My_price']
                 last_profit = (last_profit_per_n*row['Hold_n'])
                 last_profit_list.append(last_profit)
 

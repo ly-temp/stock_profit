@@ -1,1 +1,1 @@
-[ly](record/ly/summary.md): [:heavy_plus_sign:] [$651.00]
+[ly](record/ly/summary.md): [:heavy_minus_sign:] [$-651.00]

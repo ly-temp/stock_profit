@@ -113,7 +113,9 @@ with open(index_html, "w+") as f_index_html:
 
                         os.chdir(record_dir)
 
-                        write_html_md(summary_html_f, summary_md_f, img_dir, stock_name, 'i')
+                        write_html_md(summary_html_f, summary_md_f, output_img_price_1m_dir, output_img_price_1m_dir.stem, 'i')
+                        write_html_md(summary_html_f, summary_md_f, output_img_price_7d_dir, output_img_price_1m_dir.stem, 'i')
+
                         #img_url = dir_to_url(output_img_price_7d_dir)
                         #img_md = dir_to_md(output_img_price_7d_dir)
                         #summary_html_f.write('<img src="{}" alt="{}"/>\n'.format(img_url, stock_name))

@@ -14,7 +14,7 @@ list_dir = Path("./stock_list").resolve()
 img_dir = Path("./image")
 summary_md_dir = Path("summary.md")
 
-
+shutil.rmtree(record_dir)
 
 def get_yahoo_longname(symbol):
     import urllib
@@ -46,9 +46,11 @@ def plot_profit(name, hist, title):
     plt.plot(hist['Profit'], marker="s", color="black", label="Profit")
     return default_plt_save(name, title)
 
-def update_stock(name, my_price, hold_n, period, interval, plot_datetime_format):
+get_img_prefix_from_setting = lambda filename, setting: filename+"_"+setting[0]+"-"+setting[1]
+def update_stock(name, company_name, my_price, hold_n, setting):
+    period, interval, plot_datetime_format = setting
+
     ticket = yf.Ticker(name)
-    longname = get_yahoo_longname(name)
 
     hist = ticket.history(period=period, interval=interval)
     hist['Average'] = hist[['High','Low']].mean(axis=1)
@@ -59,16 +61,18 @@ def update_stock(name, my_price, hold_n, period, interval, plot_datetime_format)
     hist[index_name] = hist[index_name].dt.strftime(plot_datetime_format)
     hist.set_index(index_name, inplace=True)
 
-    img_prefix = name+"_"+period+"-"+interval
-    img_price_dir = plot_price(img_prefix, hist, longname)
-    img_profit_dir = plot_profit(img_prefix+'_profit', hist, longname)
+    #img_prefix = name+"_"+period+"-"+interval
+    img_prefix = get_img_prefix_from_setting(name, setting)
+    img_price_dir = plot_price(img_prefix, hist, company_name)
+    img_profit_dir = plot_profit(img_prefix+'_profit', hist, company_name)
     return {'img_price_dir': img_price_dir,
             'img_profit_dir': img_profit_dir, 
-            'hist': hist,
-            'longname': longname}
+            'hist': hist
+            }
 
-update_stock_7d = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "7d", "1d", "%D")
-update_stock_30m = lambda name, my_price, hold_n: update_stock(name, my_price, hold_n, "1d", "30m", "%H:%M")
+stock_setting_list = [["1d", "30m", "%H:%M"], ["7d", "1d", "%D"]]
+
+update_stock_with_setting = lambda name, company_name, my_price, hold_n, stock_setting: update_stock(name, company_name, my_price, hold_n, stock_setting)
 
 #rel_dir_to_md = lambda rel_dir: '/'.join(Path(rel_dir).parts[3:])
 
@@ -111,16 +115,20 @@ with open(index_md, "w+") as f_index_md:
             df_stock_list = pd.read_csv(list_dir.joinpath(f_name), header=None, names=['Name', 'My_price', 'Hold_n'], sep="\s+", index_col=0)
 
             last_profit_list = []
-            hist_profit_list = [pd.DataFrame()]*2     #[0]: 30m [1]: 7d
+            hist_profit_list = [pd.DataFrame()]*len(stock_setting_list)     #from differnt stock setting
             summary_md_f_buffer = StringIO()
             for name, row in df_stock_list.iterrows():
                 #my_price = df_stock_list[df_stock_list['Name'] == name]
+                company_name = get_yahoo_longname(name)
 
                 os.chdir(img_dir)
                 stock_name = name.strip()
 
-                stock_30m = update_stock_30m(stock_name, row['My_price'], row['Hold_n'])
-                stock_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
+                stock_data_list = []
+                for stock_setting in stock_setting_list:
+                    stock_data_list.append(update_stock_with_setting(stock_name, company_name, row['My_price'], row['Hold_n'], stock_setting))
+                #stock_30m = update_stock_30m(stock_name, row['My_price'], row['Hold_n'])
+                #stock_7d = update_stock_7d(stock_name, row['My_price'], row['Hold_n'])
 
                 os.chdir("../")
 
@@ -131,33 +139,43 @@ with open(index_md, "w+") as f_index_md:
                     summary_md_f_buffer.write(f"|{profit_table}")
 
                 def write_stock(stock_data):
-                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_price_dir']), "price: "+stock_data['longname'])
+                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_price_dir']), "price: "+company_name)
                     summary_md_f_buffer.write('|')
-                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+stock_data['longname'])
+                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+company_name)
                     write_profit_table(stock_data)
 
                 def append_hist_profit(hist_list, add_list):
                     if hist_list.empty:
                         return add_list
-                    return [sum(x) for x in zip([hist_list, add_list])]
+                    return hist_list + add_list
 
-                hist_profit_list[0] = append_hist_profit(hist_profit_list[0], stock_30m['hist']['Profit'])
-                hist_profit_list[1] = append_hist_profit(hist_profit_list[1], stock_7d['hist']['Profit'])
+                for i in range(len(stock_setting_list)):
+                    hist_profit_list[i] = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])
 
-
-                last_record = stock_30m['hist'].iloc[-1]
+                #choose stock_setting_list[0] as most recent record
+                last_record = stock_data_list[0]['hist'].iloc[-1]
                 last_profit = ((row['My_price'] - last_record['Close'])*row['Hold_n'])
                 last_profit_list.append(last_profit)
 
                 round_last_profit = '%.2f' % last_profit
                 profit_percentage = '%.2f' % ((row['My_price'] - last_record['Close'])/row['My_price']*100)
 
-                summary_md_f_buffer.write(f"## {name} [${last_profit}] [{profit_percentage}%]:\n#### {stock_30m['longname']}\n")
+                summary_md_f_buffer.write(f"## {name} [${last_profit}] [{profit_percentage}%]:\n#### {company_name}\n")
                 summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
-                write_stock(stock_30m)
-                summary_md_f_buffer.write('|\n|')
-                write_stock(stock_7d)
+                for stock_data in stock_data_list:
+                    write_stock(stock_data)
+                    summary_md_f_buffer.write('|\n|')
                 summary_md_f_buffer.write('|\n---\n')
+
+            profit_img_dir = []
+            for i in range(len(hist_profit_list)):
+                img_prefix = get_img_prefix_from_setting("Net_Profit", stock_setting_list[i])
+                profit_img_dir.append(plot_profit(img_prefix, hist_profit_list[i].to_frame(), img_prefix))
+            net_profit_buff = StringIO()
+            net_profit_buff.write(f"## Net Profit\n### {}")
+            net_profit_buff.seek(0)
+            shutil.copyfileobj(net_profit_buff, summary_md_f, -1)
+            net_profit_buff.close()
 
             summary_md_f_buffer.seek(0)
             shutil.copyfileobj(summary_md_f_buffer, summary_md_f, -1)

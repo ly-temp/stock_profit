@@ -193,7 +193,7 @@ with open(index_md, "w+") as f_index_md:
                 row_name = stock_setting_list[i][1] + " / " + stock_setting_list[i][0]
                 net_profit_buff.write(f"|{row_name}|")
 
-                write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
+                write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), "Net Profit: "+row_name)
                 write_profit_table(net_profit_buff, hist_profit_list[i].to_frame())
                 net_profit_buff.write("\n")
 

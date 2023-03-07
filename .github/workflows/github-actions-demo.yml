@@ -2,7 +2,7 @@ on:
   push:
   schedule:
   #- cron:  '30 * * * *'
-    - cron:  '0 1-13 * * 1-5'
+    - cron:  '5,35 1-13 * * 1-5'
 jobs:
   update_stock:
     runs-on: ubuntu-latest

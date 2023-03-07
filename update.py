@@ -153,7 +153,7 @@ with open(index_md, "w+") as f_index_md:
                 def append_hist_profit(hist_list, add_list):
                     if hist_list.empty:
                         return add_list
-                    return hist_list + add_list
+                    return (hist_list + add_list).fillna(method='ffill')
 
                 for i in range(len(stock_setting_list)):
                     hist_profit_list[i] = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])

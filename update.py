@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import os
 from io import StringIO
 import shutil
+import re
 
 root_dir = Path("./").resolve()
 index_md = Path("./index.md").resolve()
@@ -100,7 +101,7 @@ def write_img(md_f, rel_dir, display_text):
 def write_profit_table(buffer, profit_hist):
     #round_hist = stock_data['hist']
     round_profit_hist = profit_hist['Profit'].map('{:.2f}'.format).copy()
-    profit_table = round_profit_hist.reset_index().to_html(index=False).replace('\n', '')
+    profit_table = re.sub(' +', ' ', round_profit_hist.reset_index().to_html(index=False).replace('\n', ''))
     buffer.write(f"|{profit_table}")
 
 mkdir_p = lambda path: path.mkdir(parents=True, exist_ok=True)
@@ -170,8 +171,8 @@ with open(index_md, "w+") as f_index_md:
                 summary_md_f_buffer.write('|price|profit|data|\n|:---:|:---:|:---:|\n|')
                 for stock_data in stock_data_list:
                     write_stock(stock_data)
-                    summary_md_f_buffer.write('|\n|')
-                summary_md_f_buffer.write('|\n---\n')
+                    summary_md_f_buffer.write('|\n')
+                summary_md_f_buffer.write('---\n')
 
             os.chdir(img_dir)
             profit_img_dir_list = []
@@ -191,8 +192,9 @@ with open(index_md, "w+") as f_index_md:
                 net_profit_buff.write(f"|{row_name}|")
 
                 write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
-                net_profit_buff.write("|\n")
                 write_profit_table(net_profit_buff, hist_profit_list[i].to_frame())
+                net_profit_buff.write("\n")
+
                 
             net_profit_buff.write("---\n")
 

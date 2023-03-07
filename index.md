@@ -1,2 +1,2 @@
-[fam](record/fam/summary.md): [:heavy_minus_sign:] [$-828750.01]  
-[ly](record/ly/summary.md): [:heavy_minus_sign:] [$-651.00]  
+[fam](record/fam/summary.md): [📉] [$-828750.01]  
+[ly](record/ly/summary.md): [📉] [$-651.00]  

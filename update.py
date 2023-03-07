@@ -74,8 +74,10 @@ def update_stock(name, company_name, my_price, hold_n, setting):
 
 def get_profit_emoji(profit):
     if float(profit) < 0:
-        return ':heavy_minus_sign:'
-    return ':heavy_plus_sign:'
+        #return ':heavy_minus_sign:'
+        return '📉'
+    #return ':heavy_plus_sign:'
+    return '📈'
 
 stock_setting_list = [["1d", "30m", "%H:%M"], ["7d", "1d", "%D"]]
 

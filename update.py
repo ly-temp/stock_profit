@@ -129,6 +129,7 @@ with open(index_md, "w+") as f_index_md:
 
             last_profit_list = []
             hist_profit_list = [pd.DataFrame()]*len(stock_setting_list)     #from differnt stock setting
+            hist_profit_list_valid = [True]*len(stock_setting_list) 
             summary_md_f_buffer = StringIO()
             for name, row in df_stock_list.iterrows():
                 #my_price = df_stock_list[df_stock_list['Name'] == name]
@@ -157,18 +158,22 @@ with open(index_md, "w+") as f_index_md:
                         write_profit_table(summary_md_f_buffer, stock_data['hist'])
 
                 def append_hist_profit(hist_list, add_list):
+                    hist_list_valid = not add_list.empty
                     if hist_list.empty:
-                        return add_list
-                    return (hist_list + add_list).fillna(method='ffill').fillna(method='bfill')
+                        return add_list, hist_list_valid
+                    return (hist_list + add_list).fillna(method='ffill').fillna(method='bfill'), hist_list_valid
 
                 for i in range(len(stock_setting_list)):
-                    hist_profit_list[i] = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])
+                    hist_profit_list[i], valid = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])
+                    hist_profit_list_valid[i] &= valid
 
                 #choose stock_setting_list[0] as most recent record
                 last_record = None
                 for stock_data in stock_data_list:
                     if not stock_data['hist'].empty:
                         last_record = stock_data['hist'].iloc[-1]
+                #if name == "3601.HK":
+                #    print(last_record)
                 last_profit_per_n = last_record['Close'] - row['My_price']
                 last_profit = (last_profit_per_n*row['Hold_n'])
                 last_profit_list.append(last_profit)
@@ -187,9 +192,13 @@ with open(index_md, "w+") as f_index_md:
 
             os.chdir(img_dir)
             profit_img_dir_list = []
+
             for i in range(len(hist_profit_list)):
-                img_prefix = get_img_prefix_from_setting("Net_Profit", stock_setting_list[i])
-                profit_img_dir_list.append(plot_profit(img_prefix, hist_profit_list[i].to_frame(), img_prefix))
+                if hist_profit_list_valid[i]:
+                    img_prefix = get_img_prefix_from_setting("Net_Profit", stock_setting_list[i])
+                    profit_img_dir_list.append(plot_profit(img_prefix, hist_profit_list[i].to_frame(), img_prefix))
+                else:
+                    profit_img_dir_list.append(None)
             os.chdir("../")
 
             net_last_profit = round_standarize(sum(last_profit_list))
@@ -202,9 +211,12 @@ with open(index_md, "w+") as f_index_md:
                 row_name = stock_setting_list[i][0] + " / " + stock_setting_list[i][1]
                 net_profit_buff.write(f"|{row_name}|")
 
-                write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
-                write_profit_table(net_profit_buff, hist_profit_list[i].to_frame())
-                net_profit_buff.write("\n")
+                if profit_img_dir == None:
+                    net_profit_buff.write('|No Data|No Data|\n')
+                else:
+                    write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
+                    write_profit_table(net_profit_buff, hist_profit_list[i].to_frame())
+                    net_profit_buff.write("\n")
 
                 
             net_profit_buff.write("---\n")

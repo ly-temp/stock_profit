@@ -82,7 +82,7 @@ def get_profit_emoji(profit):
     #return ':heavy_plus_sign:'
     return '📈'
 
-stock_setting_list = [["1d", "30m", "%H:%M"], ["7d", "1d", "%D"]]
+stock_setting_list = [["1d", "30m", "%H:%M"], ["7d", "1d", "%D"], ["1mo", "1wk", "%D"]]
 
 update_stock_with_setting = lambda name, company_name, my_price, hold_n, stock_setting: update_stock(name, company_name, my_price, hold_n, stock_setting)
 

@@ -55,8 +55,12 @@ def update_stock(name, company_name, my_price, hold_n, setting):
     ticket = yf.Ticker(name)
 
     hist = ticket.history(period=period, interval=interval)
+
     hist['Average'] = hist[['High','Low']].mean(axis=1)
     hist['Profit'] = (hist['Close'] - my_price)*hold_n
+
+    if hist.empty:
+        return {'hist': hist}
 
     index_name = hist.index.name
     hist.reset_index(inplace=True)
@@ -69,8 +73,7 @@ def update_stock(name, company_name, my_price, hold_n, setting):
     img_profit_dir = plot_profit(img_prefix+'_profit', hist, company_name)
     return {'img_price_dir': img_price_dir,
             'img_profit_dir': img_profit_dir, 
-            'hist': hist
-            }
+            'hist': hist}
 
 def get_profit_emoji(profit):
     if float(profit) < 0:
@@ -145,10 +148,13 @@ with open(index_md, "w+") as f_index_md:
 
 
                 def write_stock(stock_data):
-                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_price_dir']), "price: "+company_name)
-                    summary_md_f_buffer.write('|')
-                    write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+company_name)
-                    write_profit_table(summary_md_f_buffer, stock_data['hist'])
+                    if stock_data['hist'].empty:
+                        summary_md_f_buffer.write('No Data|No Data|No Data')
+                    else:
+                        write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_price_dir']), "price: "+company_name)
+                        summary_md_f_buffer.write('|')
+                        write_img(summary_md_f_buffer, img_dir.joinpath(stock_data['img_profit_dir']), "profit: "+company_name)
+                        write_profit_table(summary_md_f_buffer, stock_data['hist'])
 
                 def append_hist_profit(hist_list, add_list):
                     if hist_list.empty:
@@ -159,7 +165,10 @@ with open(index_md, "w+") as f_index_md:
                     hist_profit_list[i] = append_hist_profit(hist_profit_list[i], stock_data_list[i]['hist']['Profit'])
 
                 #choose stock_setting_list[0] as most recent record
-                last_record = stock_data_list[0]['hist'].iloc[-1]
+                last_record = None
+                for stock_data in stock_data_list:
+                    if not stock_data['hist'].empty:
+                        last_record = stock_data['hist'].iloc[-1]
                 last_profit_per_n = last_record['Close'] - row['My_price']
                 last_profit = (last_profit_per_n*row['Hold_n'])
                 last_profit_list.append(last_profit)

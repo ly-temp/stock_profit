@@ -212,7 +212,7 @@ with open(index_md, "w+") as f_index_md:
                 net_profit_buff.write(f"|{row_name}|")
 
                 if profit_img_dir == None:
-                    net_profit_buff.write('|No Data|No Data|\n')
+                    net_profit_buff.write('No Data|No Data|\n')
                 else:
                     write_img(net_profit_buff, img_dir.joinpath(profit_img_dir), Path(profit_img_dir).stem)
                     write_profit_table(net_profit_buff, hist_profit_list[i].to_frame())

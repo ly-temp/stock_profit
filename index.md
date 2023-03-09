@@ -1,2 +1,2 @@
-[fam](record/fam/summary.md): [📉] [$-840439.99]  
-[ly](record/ly/summary.md): [📉] [$-886.00]  
+[fam](record/fam/summary.md): [📉] [$-840780.00]  
+[ly](record/ly/summary.md): [📉] [$-871.00]  

@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          git pull
+          git pul
           chmod +x ./startup.sh
           ./startup.sh
           python update.py

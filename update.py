@@ -60,14 +60,14 @@ class Updater:
                         'hist_settings': hist_settings
                     },
                     'hist': pd.DataFrame({
-                        'high': pd.Series(),
-                        'low': pd.Series(),
-                        'profit': pd.Series()
+                        'high': pd.Series([0]),
+                        'low': pd.Series([0]),
+                        'profit': pd.Series([0])
                     }),
                     'current': {
-                        'price': None,
-                        'profit': None,
-                        'delta_percent': None
+                        'price': 0,
+                        'profit': 0,
+                        'delta_percent': 0
                     },
                     'plot': None
                 })

@@ -96,20 +96,27 @@ class Updater:
     #self.overall.profit
     #matplotlib
     def plot_overall_graph(self, dir):
-        overall_profit = sum([result['hist']['profit'] for result in self.results])
+        try:
+            overall_profit = sum([result['hist']['profit'] for result in self.results])
 
-        setting_title_strg = self.hist_settings.join(' / ')
-        fname = f'{dir}/overall_{self.hist_settings.join("-")}.png'
+            setting_title_strg = self.hist_settings.join(' / ')
+            fname = f'{dir}/overall_{self.hist_settings.join("-")}.png'
 
-        overall_profit = overall_profit.ffill()
-        overall_profit.plot(title='Overall Profit\n'+setting_title_strg, grid=True, ax=plt.gca())
-        plt.savefig(fname)
-        plt.clf()
+            overall_profit = overall_profit.ffill()
+            overall_profit.plot(title='Overall Profit\n'+setting_title_strg, grid=True, ax=plt.gca())
+            plt.savefig(fname)
+            plt.clf()
 
-        self.overall={
-            'profit': overall_profit,
-            'plot': fname
-        }
+            self.overall={
+                'profit': overall_profit,
+                'plot': fname
+            }
+        except Exception as e:
+            print(e)
+            self.overall={
+                'profit': None,
+                'plot': None
+            }
 
 
 def series_to_html(s, interval):

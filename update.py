@@ -32,45 +32,24 @@ class Updater:
             hist = ticket.history(period=hist_settings.period, interval=hist_settings.interval).ffill()
             price_delta = hist.Close - hold.price
             profit = price_delta * hold.amount
-            try:
-                self.results.append({
-                    'info': {
-                        'name': ticket.info['longName'],
-                        'code': code,
-                        'hist_settings': hist_settings
-                    },
-                    'hist': pd.DataFrame({
-                        'high': hist.High,
-                        'low': hist.Low,
-                        'profit': profit
-                    }),
-                    'current': {
-                        'price': hist.Close.iloc[-1],
-                        'profit': profit.iloc[-1],
-                        'delta_percent': (hist.Close.iloc[-1]-hold.price)/hold.price *100
-                    },
-                    'plot': None
-                })
-            except Exception as e:
-                print(e)
-                self.results.append({
-                    'info': {
-                        'name': ticket.info['longName'],
-                        'code': code,
-                        'hist_settings': hist_settings
-                    },
-                    'hist': pd.DataFrame({
-                        'high': pd.Series([0],index=pd.DatetimeIndex([0])),
-                        'low': pd.Series([0],index=pd.DatetimeIndex([0])),
-                        'profit': pd.Series([0],index=pd.DatetimeIndex([0]))
-                    }),
-                    'current': {
-                        'price': 0,
-                        'profit': 0,
-                        'delta_percent': 0
-                    },
-                    'plot': None
-                })
+            self.results.append({
+                'info': {
+                    'name': ticket.info['longName'],
+                    'code': code,
+                    'hist_settings': hist_settings
+                },
+                'hist': pd.DataFrame({
+                    'high': hist.High,
+                    'low': hist.Low,
+                    'profit': profit
+                }),
+                'current': {
+                    'price': hist.Close.iloc[-1],
+                    'profit': profit.iloc[-1],
+                    'delta_percent': (hist.Close.iloc[-1]-hold.price)/hold.price *100
+                },
+                'plot': None
+            })
 
     #matplotlib
     def plot_individual_graph(self, dir):
@@ -96,27 +75,20 @@ class Updater:
     #self.overall.profit
     #matplotlib
     def plot_overall_graph(self, dir):
-        try:
-            overall_profit = sum([result['hist']['profit'] for result in self.results])
+        overall_profit = sum([result['hist']['profit'] for result in self.results])
 
-            setting_title_strg = self.hist_settings.join(' / ')
-            fname = f'{dir}/overall_{self.hist_settings.join("-")}.png'
+        setting_title_strg = self.hist_settings.join(' / ')
+        fname = f'{dir}/overall_{self.hist_settings.join("-")}.png'
 
-            overall_profit = overall_profit.ffill()
-            overall_profit.plot(title='Overall Profit\n'+setting_title_strg, grid=True, ax=plt.gca())
-            plt.savefig(fname)
-            plt.clf()
+        overall_profit = overall_profit.ffill()
+        overall_profit.plot(title='Overall Profit\n'+setting_title_strg, grid=True, ax=plt.gca())
+        plt.savefig(fname)
+        plt.clf()
 
-            self.overall={
-                'profit': overall_profit,
-                'plot': fname
-            }
-        except Exception as e:
-            print(e)
-            self.overall={
-                'profit': None,
-                'plot': f'{dir}/overall_{self.hist_settings.join("-")}.png'
-            }
+        self.overall={
+            'profit': overall_profit,
+            'plot': fname
+        }
 
 
 def series_to_html(s, interval):

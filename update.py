@@ -60,9 +60,9 @@ class Updater:
                         'hist_settings': hist_settings
                     },
                     'hist': pd.DataFrame({
-                        'high': pd.Series([0],index=[0]),
-                        'low': pd.Series([0],index=[0]),
-                        'profit': pd.Series([0],index=[0])
+                        'high': pd.Series([0],index=pd.DatetimeIndex([0])),
+                        'low': pd.Series([0],index=pd.DatetimeIndex([0])),
+                        'profit': pd.Series([0],index=pd.DatetimeIndex([0]))
                     }),
                     'current': {
                         'price': 0,

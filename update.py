@@ -114,8 +114,8 @@ class Updater:
         except Exception as e:
             print(e)
             self.overall={
-                'profit': 'record',
-                'plot': 'record'
+                'profit': None,
+                'plot': fname
             }
 
 

@@ -115,7 +115,7 @@ class Updater:
             print(e)
             self.overall={
                 'profit': None,
-                'plot': fname
+                'plot': f'{dir}/overall_{self.hist_settings.join("-")}.png'
             }
 
 

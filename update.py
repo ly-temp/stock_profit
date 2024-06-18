@@ -32,24 +32,45 @@ class Updater:
             hist = ticket.history(period=hist_settings.period, interval=hist_settings.interval).ffill()
             price_delta = hist.Close - hold.price
             profit = price_delta * hold.amount
-            self.results.append({
-                'info': {
-                    'name': ticket.info['longName'],
-                    'code': code,
-                    'hist_settings': hist_settings
-                },
-                'hist': pd.DataFrame({
-                    'high': hist.High,
-                    'low': hist.Low,
-                    'profit': profit
-                }),
-                'current': {
-                    'price': hist.Close.iloc[-1],
-                    'profit': profit.iloc[-1],
-                    'delta_percent': (hist.Close.iloc[-1]-hold.price)/hold.price *100
-                },
-                'plot': None
-            })
+            try:
+                self.results.append({
+                    'info': {
+                        'name': ticket.info['longName'],
+                        'code': code,
+                        'hist_settings': hist_settings
+                    },
+                    'hist': pd.DataFrame({
+                        'high': hist.High,
+                        'low': hist.Low,
+                        'profit': profit
+                    }),
+                    'current': {
+                        'price': hist.Close.iloc[-1],
+                        'profit': profit.iloc[-1],
+                        'delta_percent': (hist.Close.iloc[-1]-hold.price)/hold.price *100
+                    },
+                    'plot': None
+                })
+            except Exception as e:
+                print(e)
+                self.results.append({
+                    'info': {
+                        'name': ticket.info['longName'],
+                        'code': code,
+                        'hist_settings': hist_settings
+                    },
+                    'hist': pd.DataFrame({
+                        'high': pd.Series(),
+                        'low': pd.Series(),
+                        'profit': pd.Series()
+                    }),
+                    'current': {
+                        'price': None,
+                        'profit': None,
+                        'delta_percent': None
+                    },
+                    'plot': None
+                })
 
     #matplotlib
     def plot_individual_graph(self, dir):

@@ -1,5 +1,5 @@
 ## Net Profit [📉]:
-### $-2821.00
+### $-2841.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
@@ -14,13 +14,13 @@
 |![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-16</td> <td>208.0</td> </tr> <tr> <td>2024-07-17</td> <td>158.0</td> </tr> <tr> <td>2024-07-18</td> <td>48.0</td> </tr> <tr> <td>2024-07-19</td> <td>-12.0</td> </tr> <tr> <td>2024-07-22</td> <td>8.0</td> </tr> </tbody></table>|
 |![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-06-24</td> <td>-22.0</td> </tr> <tr> <td>2024-07-01</td> <td>28.0</td> </tr> <tr> <td>2024-07-08</td> <td>328.0</td> </tr> <tr> <td>2024-07-15</td> <td>-12.0</td> </tr> <tr> <td>2024-07-22</td> <td>8.0</td> </tr> </tbody></table>|
 ---
-## 0709.HK [📉] [$-956.00] [-22.89%]:
+## 0709.HK [📉] [$-976.00] [-23.37%]:
 #### Giordano International Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1076.0</td> </tr> <tr> <td>10:00</td> <td>-1116.0</td> </tr> <tr> <td>10:30</td> <td>-1056.0</td> </tr> <tr> <td>11:00</td> <td>-976.0</td> </tr> <tr> <td>11:30</td> <td>-956.0</td> </tr> <tr> <td>13:00</td> <td>-956.0</td> </tr> </tbody></table>|
-|![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-16</td> <td>-576.0</td> </tr> <tr> <td>2024-07-17</td> <td>-596.0</td> </tr> <tr> <td>2024-07-18</td> <td>-596.0</td> </tr> <tr> <td>2024-07-19</td> <td>-956.0</td> </tr> <tr> <td>2024-07-22</td> <td>-956.0</td> </tr> </tbody></table>|
-|![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-06-24</td> <td>-476.0</td> </tr> <tr> <td>2024-07-01</td> <td>-496.0</td> </tr> <tr> <td>2024-07-08</td> <td>-516.0</td> </tr> <tr> <td>2024-07-15</td> <td>-956.0</td> </tr> <tr> <td>2024-07-22</td> <td>-956.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1076.0</td> </tr> <tr> <td>10:00</td> <td>-1116.0</td> </tr> <tr> <td>10:30</td> <td>-1056.0</td> </tr> <tr> <td>11:00</td> <td>-976.0</td> </tr> <tr> <td>11:30</td> <td>-956.0</td> </tr> <tr> <td>13:00</td> <td>-976.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-16</td> <td>-576.0</td> </tr> <tr> <td>2024-07-17</td> <td>-596.0</td> </tr> <tr> <td>2024-07-18</td> <td>-596.0</td> </tr> <tr> <td>2024-07-19</td> <td>-956.0</td> </tr> <tr> <td>2024-07-22</td> <td>-976.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-06-24</td> <td>-476.0</td> </tr> <tr> <td>2024-07-01</td> <td>-496.0</td> </tr> <tr> <td>2024-07-08</td> <td>-516.0</td> </tr> <tr> <td>2024-07-15</td> <td>-956.0</td> </tr> <tr> <td>2024-07-22</td> <td>-976.0</td> </tr> </tbody></table>|
 ---
 ## 1310.HK [📉] [$-1654.00] [-56.66%]:
 #### HKBN Ltd.

@@ -1,18 +1,18 @@
 ## Net Profit [📉]:
-### $-4236.00
+### $-4216.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>NaN</td> </tr> <tr> <td>10:00</td> <td>NaN</td> </tr> <tr> <td>10:30</td> <td>-4236.0</td> </tr> <tr> <td>11:00</td> <td>-4236.0</td> </tr> </tbody></table>|
-|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-19</td> <td>-4196.0</td> </tr> <tr> <td>2024-08-20</td> <td>-4161.0</td> </tr> <tr> <td>2024-08-21</td> <td>-4181.0</td> </tr> <tr> <td>2024-08-22</td> <td>-4276.0</td> </tr> <tr> <td>2024-08-23</td> <td>-4236.0</td> </tr> </tbody></table>|
-|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-22</td> <td>-3856.0</td> </tr> <tr> <td>2024-07-29</td> <td>-3886.0</td> </tr> <tr> <td>2024-08-05</td> <td>-4316.0</td> </tr> <tr> <td>2024-08-12</td> <td>-4226.0</td> </tr> <tr> <td>2024-08-19</td> <td>-4236.0</td> </tr> </tbody></table>|
+|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-19</td> <td>-4196.0</td> </tr> <tr> <td>2024-08-20</td> <td>-4161.0</td> </tr> <tr> <td>2024-08-21</td> <td>-4181.0</td> </tr> <tr> <td>2024-08-22</td> <td>-4276.0</td> </tr> <tr> <td>2024-08-23</td> <td>-4216.0</td> </tr> </tbody></table>|
+|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-22</td> <td>-3856.0</td> </tr> <tr> <td>2024-07-29</td> <td>-3886.0</td> </tr> <tr> <td>2024-08-05</td> <td>-4316.0</td> </tr> <tr> <td>2024-08-12</td> <td>-4226.0</td> </tr> <tr> <td>2024-08-19</td> <td>-4216.0</td> </tr> </tbody></table>|
 ---
-## 0293.HK [📉] [$-152.00] [-1.90%]:
+## 0293.HK [📉] [$-132.00] [-1.65%]:
 #### Cathay Pacific Airways Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-152.0</td> </tr> <tr> <td>10:00</td> <td>-162.0</td> </tr> <tr> <td>10:30</td> <td>-152.0</td> </tr> <tr> <td>11:00</td> <td>-152.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-19</td> <td>-162.0</td> </tr> <tr> <td>2024-08-20</td> <td>-72.0</td> </tr> <tr> <td>2024-08-21</td> <td>-172.0</td> </tr> <tr> <td>2024-08-22</td> <td>-152.0</td> </tr> <tr> <td>2024-08-23</td> <td>-152.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-22</td> <td>38.0</td> </tr> <tr> <td>2024-07-29</td> <td>68.0</td> </tr> <tr> <td>2024-08-05</td> <td>-212.0</td> </tr> <tr> <td>2024-08-12</td> <td>-222.0</td> </tr> <tr> <td>2024-08-19</td> <td>-152.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-152.0</td> </tr> <tr> <td>10:00</td> <td>-162.0</td> </tr> <tr> <td>10:30</td> <td>-152.0</td> </tr> <tr> <td>11:00</td> <td>-132.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-19</td> <td>-162.0</td> </tr> <tr> <td>2024-08-20</td> <td>-72.0</td> </tr> <tr> <td>2024-08-21</td> <td>-172.0</td> </tr> <tr> <td>2024-08-22</td> <td>-152.0</td> </tr> <tr> <td>2024-08-23</td> <td>-132.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-22</td> <td>38.0</td> </tr> <tr> <td>2024-07-29</td> <td>68.0</td> </tr> <tr> <td>2024-08-05</td> <td>-212.0</td> </tr> <tr> <td>2024-08-12</td> <td>-222.0</td> </tr> <tr> <td>2024-08-19</td> <td>-132.0</td> </tr> </tbody></table>|
 ---
 ## 0709.HK [📉] [$-1036.00] [-24.81%]:
 #### Giordano International Limited

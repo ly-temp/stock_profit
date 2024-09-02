@@ -1,5 +1,5 @@
 ## Net Profit [📉]:
-### $-40970.00
+### $-40290.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
@@ -14,11 +14,11 @@
 |![price](image/3601.HK_1d-5d_price.png)|![profit](image/3601.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-27</td> <td>-954039.99</td> </tr> <tr> <td>2024-08-28</td> <td>-958920.00</td> </tr> <tr> <td>2024-08-29</td> <td>-958920.00</td> </tr> <tr> <td>2024-08-30</td> <td>-966240.00</td> </tr> </tbody></table>|
 |![price](image/3601.HK_1wk-1mo_price.png)|![profit](image/3601.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-29</td> <td>-949160.0</td> </tr> <tr> <td>2024-08-05</td> <td>-946720.0</td> </tr> <tr> <td>2024-08-12</td> <td>-951600.0</td> </tr> <tr> <td>2024-08-19</td> <td>-949160.0</td> </tr> <tr> <td>2024-08-26</td> <td>-963800.0</td> </tr> </tbody></table>|
 ---
-## 0981.HK [📉] [$-40970.00] [-22.42%]:
+## 0981.HK [📉] [$-40290.00] [-22.05%]:
 #### Semiconductor Manufacturing International Corporation
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0981.HK_30m-1d_price.png)|![profit](image/0981.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-40630.01</td> </tr> <tr> <td>10:00</td> <td>-40970.00</td> </tr> </tbody></table>|
-|![price](image/0981.HK_1d-5d_price.png)|![profit](image/0981.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-27</td> <td>-43350.0</td> </tr> <tr> <td>2024-08-28</td> <td>-43350.0</td> </tr> <tr> <td>2024-08-29</td> <td>-41820.0</td> </tr> <tr> <td>2024-08-30</td> <td>-37570.0</td> </tr> <tr> <td>2024-09-02</td> <td>-40970.0</td> </tr> </tbody></table>|
+|![price](image/0981.HK_30m-1d_price.png)|![profit](image/0981.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-40630.01</td> </tr> <tr> <td>10:00</td> <td>-40460.00</td> </tr> <tr> <td>10:30</td> <td>-40290.00</td> </tr> </tbody></table>|
+|![price](image/0981.HK_1d-5d_price.png)|![profit](image/0981.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-27</td> <td>-43350.0</td> </tr> <tr> <td>2024-08-28</td> <td>-43350.0</td> </tr> <tr> <td>2024-08-29</td> <td>-41820.0</td> </tr> <tr> <td>2024-08-30</td> <td>-37570.0</td> </tr> <tr> <td>2024-09-02</td> <td>-40290.0</td> </tr> </tbody></table>|
 |![price](image/0981.HK_1wk-1mo_price.png)|![profit](image/0981.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-07-29</td> <td>-40799.99</td> </tr> <tr> <td>2024-08-05</td> <td>-41820.00</td> </tr> <tr> <td>2024-08-12</td> <td>-38590.01</td> </tr> <tr> <td>2024-08-19</td> <td>-43860.00</td> </tr> <tr> <td>2024-08-26</td> <td>-37570.00</td> </tr> </tbody></table>|
 ---

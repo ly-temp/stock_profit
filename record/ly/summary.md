@@ -1,18 +1,18 @@
 ## Net Profit [📉]:
-### $-3176.00
+### $-3186.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
 |1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-29</td> <td>-4121.00</td> </tr> <tr> <td>2024-08-30</td> <td>-3925.34</td> </tr> <tr> <td>2024-09-02</td> <td>-3936.00</td> </tr> <tr> <td>2024-09-03</td> <td>-3936.00</td> </tr> <tr> <td>2024-09-04</td> <td>-3936.00</td> </tr> </tbody></table>|
-|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-05</td> <td>-4460.17</td> </tr> <tr> <td>2024-08-12</td> <td>-4369.29</td> </tr> <tr> <td>2024-08-19</td> <td>-4285.85</td> </tr> <tr> <td>2024-08-26</td> <td>-4003.13</td> </tr> <tr> <td>2024-09-02</td> <td>-4421.00</td> </tr> </tbody></table>|
+|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-05</td> <td>-4460.17</td> </tr> <tr> <td>2024-08-12</td> <td>-4369.29</td> </tr> <tr> <td>2024-08-19</td> <td>-4285.85</td> </tr> <tr> <td>2024-08-26</td> <td>-4003.13</td> </tr> <tr> <td>2024-09-02</td> <td>-4431.00</td> </tr> </tbody></table>|
 ---
-## 0293.HK [📉] [$-282.00] [-3.52%]:
+## 0293.HK [📉] [$-292.00] [-3.64%]:
 #### Cathay Pacific Airways Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-242.0</td> </tr> <tr> <td>10:00</td> <td>-242.0</td> </tr> <tr> <td>10:30</td> <td>-232.0</td> </tr> <tr> <td>11:00</td> <td>-242.0</td> </tr> <tr> <td>11:30</td> <td>-262.0</td> </tr> <tr> <td>13:00</td> <td>-282.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-29</td> <td>-132.0</td> </tr> <tr> <td>2024-08-30</td> <td>-62.0</td> </tr> <tr> <td>2024-09-02</td> <td>-2.0</td> </tr> <tr> <td>2024-09-04</td> <td>-282.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-05</td> <td>-212.0</td> </tr> <tr> <td>2024-08-12</td> <td>-222.0</td> </tr> <tr> <td>2024-08-19</td> <td>-122.0</td> </tr> <tr> <td>2024-08-26</td> <td>-62.0</td> </tr> <tr> <td>2024-09-02</td> <td>-282.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-242.0</td> </tr> <tr> <td>10:00</td> <td>-242.0</td> </tr> <tr> <td>10:30</td> <td>-232.0</td> </tr> <tr> <td>11:00</td> <td>-242.0</td> </tr> <tr> <td>11:30</td> <td>-262.0</td> </tr> <tr> <td>13:00</td> <td>-292.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-29</td> <td>-132.0</td> </tr> <tr> <td>2024-08-30</td> <td>-62.0</td> </tr> <tr> <td>2024-09-02</td> <td>-2.0</td> </tr> <tr> <td>2024-09-04</td> <td>-292.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-05</td> <td>-212.0</td> </tr> <tr> <td>2024-08-12</td> <td>-222.0</td> </tr> <tr> <td>2024-08-19</td> <td>-122.0</td> </tr> <tr> <td>2024-08-26</td> <td>-62.0</td> </tr> <tr> <td>2024-09-02</td> <td>-292.0</td> </tr> </tbody></table>|
 ---
 ## 0709.HK [📉] [$-1076.00] [-25.77%]:
 #### Giordano International Limited

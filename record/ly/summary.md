@@ -1,10 +1,10 @@
 ## Net Profit [📉]:
-### $-3126.00
+### $-3121.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
 |1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-05</td> <td>-4331.0</td> </tr> <tr> <td>2024-09-09</td> <td>-4396.0</td> </tr> <tr> <td>2024-09-10</td> <td>-4321.0</td> </tr> <tr> <td>2024-09-11</td> <td>-4426.0</td> </tr> <tr> <td>2024-09-12</td> <td>-4426.0</td> </tr> </tbody></table>|
-|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-12</td> <td>-4715.32</td> </tr> <tr> <td>2024-08-19</td> <td>-4639.24</td> </tr> <tr> <td>2024-08-26</td> <td>-4368.70</td> </tr> <tr> <td>2024-09-02</td> <td>-4743.00</td> </tr> <tr> <td>2024-09-09</td> <td>-4371.00</td> </tr> </tbody></table>|
+|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-12</td> <td>-4715.32</td> </tr> <tr> <td>2024-08-19</td> <td>-4639.24</td> </tr> <tr> <td>2024-08-26</td> <td>-4368.70</td> </tr> <tr> <td>2024-09-02</td> <td>-4743.00</td> </tr> <tr> <td>2024-09-09</td> <td>-4366.00</td> </tr> </tbody></table>|
 ---
 ## 0293.HK [📉] [$-162.00] [-2.02%]:
 #### Cathay Pacific Airways Limited
@@ -30,13 +30,13 @@
 |![price](image/1310.HK_1d-5d_price.png)|![profit](image/1310.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-05</td> <td>-1584.0</td> </tr> <tr> <td>2024-09-09</td> <td>-1629.0</td> </tr> <tr> <td>2024-09-10</td> <td>-1614.0</td> </tr> <tr> <td>2024-09-11</td> <td>-1649.0</td> </tr> <tr> <td>2024-09-12</td> <td>-1589.0</td> </tr> </tbody></table>|
 |![price](image/1310.HK_1wk-1mo_price.png)|![profit](image/1310.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-12</td> <td>-1709.0</td> </tr> <tr> <td>2024-08-19</td> <td>-1674.0</td> </tr> <tr> <td>2024-08-26</td> <td>-1574.0</td> </tr> <tr> <td>2024-09-02</td> <td>-1589.0</td> </tr> <tr> <td>2024-09-09</td> <td>-1589.0</td> </tr> </tbody></table>|
 ---
-## 2638.HK [📉] [$-239.00] [-8.39%]:
+## 2638.HK [📉] [$-234.00] [-8.21%]:
 #### HK Electric Investments and HK Electric Investments Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-239.0</td> </tr> <tr> <td>10:00</td> <td>-244.0</td> </tr> <tr> <td>10:30</td> <td>-234.0</td> </tr> <tr> <td>11:00</td> <td>-239.0</td> </tr> <tr> <td>11:30</td> <td>-239.0</td> </tr> <tr> <td>13:00</td> <td>-239.0</td> </tr> </tbody></table>|
-|![price](image/2638.HK_1d-5d_price.png)|![profit](image/2638.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-05</td> <td>-224.0</td> </tr> <tr> <td>2024-09-09</td> <td>-234.0</td> </tr> <tr> <td>2024-09-10</td> <td>-244.0</td> </tr> <tr> <td>2024-09-11</td> <td>-234.0</td> </tr> <tr> <td>2024-09-12</td> <td>-239.0</td> </tr> </tbody></table>|
-|![price](image/2638.HK_1wk-1mo_price.png)|![profit](image/2638.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-12</td> <td>-203.99</td> </tr> <tr> <td>2024-08-19</td> <td>-208.85</td> </tr> <tr> <td>2024-08-26</td> <td>-276.79</td> </tr> <tr> <td>2024-09-02</td> <td>-224.00</td> </tr> <tr> <td>2024-09-09</td> <td>-239.00</td> </tr> </tbody></table>|
+|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-239.0</td> </tr> <tr> <td>10:00</td> <td>-244.0</td> </tr> <tr> <td>10:30</td> <td>-234.0</td> </tr> <tr> <td>11:00</td> <td>-239.0</td> </tr> <tr> <td>11:30</td> <td>-239.0</td> </tr> <tr> <td>13:00</td> <td>-234.0</td> </tr> </tbody></table>|
+|![price](image/2638.HK_1d-5d_price.png)|![profit](image/2638.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-05</td> <td>-224.0</td> </tr> <tr> <td>2024-09-09</td> <td>-234.0</td> </tr> <tr> <td>2024-09-10</td> <td>-244.0</td> </tr> <tr> <td>2024-09-11</td> <td>-234.0</td> </tr> <tr> <td>2024-09-12</td> <td>-234.0</td> </tr> </tbody></table>|
+|![price](image/2638.HK_1wk-1mo_price.png)|![profit](image/2638.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-08-12</td> <td>-203.99</td> </tr> <tr> <td>2024-08-19</td> <td>-208.85</td> </tr> <tr> <td>2024-08-26</td> <td>-276.79</td> </tr> <tr> <td>2024-09-02</td> <td>-224.00</td> </tr> <tr> <td>2024-09-09</td> <td>-234.00</td> </tr> </tbody></table>|
 ---
 ## 0533.HK [📈] [$0.00] [0.00%]:
 #### Goldlion Holdings Limited

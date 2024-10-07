@@ -1,17 +1,17 @@
 ## Net Profit [📉]:
-### $-3146.00
+### $-3136.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-3301.0</td> </tr> <tr> <td>10:00</td> <td>-3256.0</td> </tr> <tr> <td>10:30</td> <td>-3281.0</td> </tr> <tr> <td>11:00</td> <td>-3176.0</td> </tr> <tr> <td>11:30</td> <td>-3191.0</td> </tr> <tr> <td>13:00</td> <td>-3191.0</td> </tr> </tbody></table>|
-|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-30</td> <td>-3251.0</td> </tr> <tr> <td>2024-10-02</td> <td>-3386.0</td> </tr> <tr> <td>2024-10-03</td> <td>-3546.0</td> </tr> <tr> <td>2024-10-04</td> <td>-3456.0</td> </tr> <tr> <td>2024-10-07</td> <td>-3146.0</td> </tr> </tbody></table>|
+|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-30</td> <td>-3251.0</td> </tr> <tr> <td>2024-10-02</td> <td>-3386.0</td> </tr> <tr> <td>2024-10-03</td> <td>-3546.0</td> </tr> <tr> <td>2024-10-04</td> <td>-3456.0</td> </tr> <tr> <td>2024-10-07</td> <td>-3136.0</td> </tr> </tbody></table>|
 |1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-09</td> <td>-4276.0</td> </tr> <tr> <td>2024-09-16</td> <td>-3956.0</td> </tr> <tr> <td>2024-09-23</td> <td>-3366.0</td> </tr> <tr> <td>2024-09-30</td> <td>-3456.0</td> </tr> </tbody></table>|
 ---
-## 0293.HK [📈] [$218.00] [2.72%]:
+## 0293.HK [📈] [$228.00] [2.85%]:
 #### Cathay Pacific Airways Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>258.0</td> </tr> <tr> <td>10:00</td> <td>208.0</td> </tr> <tr> <td>10:30</td> <td>198.0</td> </tr> <tr> <td>11:00</td> <td>198.0</td> </tr> <tr> <td>11:30</td> <td>198.0</td> </tr> <tr> <td>13:00</td> <td>218.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-30</td> <td>338.0</td> </tr> <tr> <td>2024-10-02</td> <td>238.0</td> </tr> <tr> <td>2024-10-03</td> <td>148.0</td> </tr> <tr> <td>2024-10-04</td> <td>148.0</td> </tr> <tr> <td>2024-10-07</td> <td>218.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>258.0</td> </tr> <tr> <td>10:00</td> <td>208.0</td> </tr> <tr> <td>10:30</td> <td>198.0</td> </tr> <tr> <td>11:00</td> <td>198.0</td> </tr> <tr> <td>11:30</td> <td>198.0</td> </tr> <tr> <td>13:00</td> <td>228.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-30</td> <td>338.0</td> </tr> <tr> <td>2024-10-02</td> <td>238.0</td> </tr> <tr> <td>2024-10-03</td> <td>148.0</td> </tr> <tr> <td>2024-10-04</td> <td>148.0</td> </tr> <tr> <td>2024-10-07</td> <td>228.0</td> </tr> </tbody></table>|
 |![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-09</td> <td>-102.0</td> </tr> <tr> <td>2024-09-16</td> <td>38.0</td> </tr> <tr> <td>2024-09-23</td> <td>278.0</td> </tr> <tr> <td>2024-09-30</td> <td>148.0</td> </tr> </tbody></table>|
 ---
 ## 0709.HK [📉] [$-656.00] [-15.71%]:

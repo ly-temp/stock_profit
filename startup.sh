@@ -1,1 +1,1 @@
-pip install --quiet yfinance pandas matplotlib
+pip install --break-system-packages --quiet yfinance pandas matplotlib

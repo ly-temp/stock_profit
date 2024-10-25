@@ -18,7 +18,7 @@
 #### Semiconductor Manufacturing International Corporation
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0981.HK_30m-1d_price.png)|![profit](image/0981.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>65025.0</td> </tr> <tr> <td>10:00</td> <td>65025.0</td> </tr> </tbody></table>|
+|![price](image/0981.HK_30m-1d_price.png)|![profit](image/0981.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>65025.00</td> </tr> <tr> <td>10:00</td> <td>66299.99</td> </tr> <tr> <td>10:30</td> <td>65025.00</td> </tr> </tbody></table>|
 |![price](image/0981.HK_1d-5d_price.png)|![profit](image/0981.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-10-21</td> <td>68850.00</td> </tr> <tr> <td>2024-10-22</td> <td>69700.01</td> </tr> <tr> <td>2024-10-23</td> <td>65025.00</td> </tr> <tr> <td>2024-10-24</td> <td>59500.00</td> </tr> <tr> <td>2024-10-25</td> <td>65025.00</td> </tr> </tbody></table>|
 |![price](image/0981.HK_1wk-1mo_price.png)|![profit](image/0981.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-09-23</td> <td>-24990.0</td> </tr> <tr> <td>2024-09-30</td> <td>49725.0</td> </tr> <tr> <td>2024-10-07</td> <td>34000.0</td> </tr> <tr> <td>2024-10-14</td> <td>74375.0</td> </tr> <tr> <td>2024-10-21</td> <td>65025.0</td> </tr> </tbody></table>|
 ---

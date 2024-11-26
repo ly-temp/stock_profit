@@ -1,18 +1,18 @@
 ## Net Profit [📉]:
-### $-241.00
+### $-211.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
 |1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-11-20</td> <td>-2111.0</td> </tr> <tr> <td>2024-11-21</td> <td>-976.0</td> </tr> <tr> <td>2024-11-22</td> <td>-1006.0</td> </tr> <tr> <td>2024-11-25</td> <td>-746.0</td> </tr> <tr> <td>2024-11-26</td> <td>-746.0</td> </tr> </tbody></table>|
-|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-10-28</td> <td>-3276.0</td> </tr> <tr> <td>2024-11-04</td> <td>-3321.0</td> </tr> <tr> <td>2024-11-11</td> <td>-2716.0</td> </tr> <tr> <td>2024-11-18</td> <td>-1006.0</td> </tr> <tr> <td>2024-11-25</td> <td>-556.0</td> </tr> </tbody></table>|
+|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-10-28</td> <td>-3276.0</td> </tr> <tr> <td>2024-11-04</td> <td>-3321.0</td> </tr> <tr> <td>2024-11-11</td> <td>-2716.0</td> </tr> <tr> <td>2024-11-18</td> <td>-1006.0</td> </tr> <tr> <td>2024-11-25</td> <td>-526.0</td> </tr> </tbody></table>|
 ---
-## 0293.HK [📈] [$1588.00] [19.82%]:
+## 0293.HK [📈] [$1618.00] [20.19%]:
 #### CATHAY PAC AIR
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>1478.0</td> </tr> <tr> <td>10:00</td> <td>1478.0</td> </tr> <tr> <td>10:30</td> <td>1518.0</td> </tr> <tr> <td>11:00</td> <td>1518.0</td> </tr> <tr> <td>11:30</td> <td>1588.0</td> </tr> <tr> <td>13:00</td> <td>1588.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-11-20</td> <td>968.0</td> </tr> <tr> <td>2024-11-21</td> <td>1168.0</td> </tr> <tr> <td>2024-11-22</td> <td>1228.0</td> </tr> <tr> <td>2024-11-25</td> <td>1328.0</td> </tr> <tr> <td>2024-11-26</td> <td>1588.0</td> </tr> </tbody></table>|
-|![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-10-28</td> <td>118.0</td> </tr> <tr> <td>2024-11-04</td> <td>128.0</td> </tr> <tr> <td>2024-11-11</td> <td>688.0</td> </tr> <tr> <td>2024-11-18</td> <td>1228.0</td> </tr> <tr> <td>2024-11-25</td> <td>1588.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_30m-1d_price.png)|![profit](image/0293.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>1478.0</td> </tr> <tr> <td>10:00</td> <td>1478.0</td> </tr> <tr> <td>10:30</td> <td>1518.0</td> </tr> <tr> <td>11:00</td> <td>1518.0</td> </tr> <tr> <td>11:30</td> <td>1588.0</td> </tr> <tr> <td>13:00</td> <td>1618.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1d-5d_price.png)|![profit](image/0293.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-11-20</td> <td>968.0</td> </tr> <tr> <td>2024-11-21</td> <td>1168.0</td> </tr> <tr> <td>2024-11-22</td> <td>1228.0</td> </tr> <tr> <td>2024-11-25</td> <td>1328.0</td> </tr> <tr> <td>2024-11-26</td> <td>1618.0</td> </tr> </tbody></table>|
+|![price](image/0293.HK_1wk-1mo_price.png)|![profit](image/0293.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2024-10-28</td> <td>118.0</td> </tr> <tr> <td>2024-11-04</td> <td>128.0</td> </tr> <tr> <td>2024-11-11</td> <td>688.0</td> </tr> <tr> <td>2024-11-18</td> <td>1228.0</td> </tr> <tr> <td>2024-11-25</td> <td>1618.0</td> </tr> </tbody></table>|
 ---
 ## 0709.HK [📉] [$-916.00] [-21.93%]:
 #### GIORDANO INT'L

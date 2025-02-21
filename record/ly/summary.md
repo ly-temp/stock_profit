@@ -1,18 +1,18 @@
 ## Net Profit [📉]:
-### $-832.00
+### $-822.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
 |1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-02-17</td> <td>-918.0</td> </tr> <tr> <td>2025-02-18</td> <td>-533.0</td> </tr> <tr> <td>2025-02-19</td> <td>-653.0</td> </tr> <tr> <td>2025-02-20</td> <td>-653.0</td> </tr> <tr> <td>2025-02-21</td> <td>-653.0</td> </tr> </tbody></table>|
-|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-01-20</td> <td>-1448.0</td> </tr> <tr> <td>2025-01-27</td> <td>-1358.0</td> </tr> <tr> <td>2025-02-03</td> <td>-893.0</td> </tr> <tr> <td>2025-02-10</td> <td>-613.0</td> </tr> <tr> <td>2025-02-17</td> <td>-643.0</td> </tr> </tbody></table>|
+|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-01-20</td> <td>-1448.0</td> </tr> <tr> <td>2025-01-27</td> <td>-1358.0</td> </tr> <tr> <td>2025-02-03</td> <td>-893.0</td> </tr> <tr> <td>2025-02-10</td> <td>-613.0</td> </tr> <tr> <td>2025-02-17</td> <td>-633.0</td> </tr> </tbody></table>|
 ---
-## 1929.HK [📈] [$982.00] [14.19%]:
+## 1929.HK [📈] [$992.00] [14.34%]:
 #### CHOW TAI FOOK
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/1929.HK_30m-1d_price.png)|![profit](image/1929.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>1032.0</td> </tr> <tr> <td>10:00</td> <td>1002.0</td> </tr> <tr> <td>10:30</td> <td>982.0</td> </tr> </tbody></table>|
-|![price](image/1929.HK_1d-5d_price.png)|![profit](image/1929.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-02-17</td> <td>632.0</td> </tr> <tr> <td>2025-02-18</td> <td>982.0</td> </tr> <tr> <td>2025-02-19</td> <td>982.0</td> </tr> <tr> <td>2025-02-21</td> <td>982.0</td> </tr> </tbody></table>|
-|![price](image/1929.HK_1wk-1mo_price.png)|![profit](image/1929.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-01-20</td> <td>22.0</td> </tr> <tr> <td>2025-01-27</td> <td>82.0</td> </tr> <tr> <td>2025-02-03</td> <td>572.0</td> </tr> <tr> <td>2025-02-10</td> <td>932.0</td> </tr> <tr> <td>2025-02-17</td> <td>982.0</td> </tr> </tbody></table>|
+|![price](image/1929.HK_30m-1d_price.png)|![profit](image/1929.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>1032.0</td> </tr> <tr> <td>10:00</td> <td>1002.0</td> </tr> <tr> <td>10:30</td> <td>992.0</td> </tr> </tbody></table>|
+|![price](image/1929.HK_1d-5d_price.png)|![profit](image/1929.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-02-17</td> <td>632.0</td> </tr> <tr> <td>2025-02-18</td> <td>982.0</td> </tr> <tr> <td>2025-02-19</td> <td>982.0</td> </tr> <tr> <td>2025-02-21</td> <td>992.0</td> </tr> </tbody></table>|
+|![price](image/1929.HK_1wk-1mo_price.png)|![profit](image/1929.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-01-20</td> <td>22.0</td> </tr> <tr> <td>2025-01-27</td> <td>82.0</td> </tr> <tr> <td>2025-02-03</td> <td>572.0</td> </tr> <tr> <td>2025-02-10</td> <td>932.0</td> </tr> <tr> <td>2025-02-17</td> <td>992.0</td> </tr> </tbody></table>|
 ---
 ## 0560.HK [📈] [$0.00] [0.00%]:
 #### CHU KONG SHIP

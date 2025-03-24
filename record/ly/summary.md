@@ -1,17 +1,17 @@
 ## Net Profit [📉]:
-### $-1255.00
+### $-1527.00
 |type|graph|data|
 |:---:|:---:|:---:|
-|30m / 1d|![net_profit](image/overall_30m-1d.png)||
-|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-18</td> <td>-1182.0</td> </tr> <tr> <td>2025-03-19</td> <td>-1197.0</td> </tr> <tr> <td>2025-03-20</td> <td>-1132.0</td> </tr> <tr> <td>2025-03-21</td> <td>-1462.0</td> </tr> <tr> <td>2025-03-24</td> <td>-1462.0</td> </tr> </tbody></table>|
+|30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>NaN</td> </tr> <tr> <td>10:00</td> <td>NaN</td> </tr> <tr> <td>10:30</td> <td>NaN</td> </tr> <tr> <td>11:00</td> <td>NaN</td> </tr> <tr> <td>11:30</td> <td>NaN</td> </tr> <tr> <td>13:00</td> <td>NaN</td> </tr> <tr> <td>13:30</td> <td>NaN</td> </tr> <tr> <td>14:00</td> <td>NaN</td> </tr> <tr> <td>14:30</td> <td>NaN</td> </tr> <tr> <td>15:00</td> <td>NaN</td> </tr> </tbody></table>|
+|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-18</td> <td>-1182.0</td> </tr> <tr> <td>2025-03-19</td> <td>-1197.0</td> </tr> <tr> <td>2025-03-20</td> <td>-1132.0</td> </tr> <tr> <td>2025-03-21</td> <td>-1442.0</td> </tr> <tr> <td>2025-03-24</td> <td>-1527.0</td> </tr> </tbody></table>|
 |1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-02-24</td> <td>-1612.0</td> </tr> <tr> <td>2025-03-03</td> <td>-1342.0</td> </tr> <tr> <td>2025-03-10</td> <td>-1242.0</td> </tr> <tr> <td>2025-03-17</td> <td>-1442.0</td> </tr> </tbody></table>|
 ---
-## 0573.HK [📈] [$0.00] [0.00%]:
+## 0573.HK [📉] [$-272.00] [-14.53%]:
 #### TAO HEUNG HLDGS
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>index</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>00:00</td> <td>0</td> </tr> </tbody></table>|
-|![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-18</td> <td>-152.0</td> </tr> <tr> <td>2025-03-19</td> <td>-112.0</td> </tr> <tr> <td>2025-03-20</td> <td>-112.0</td> </tr> <tr> <td>2025-03-21</td> <td>-232.0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>15:00</td> <td>-272.0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-18</td> <td>-152.0</td> </tr> <tr> <td>2025-03-19</td> <td>-112.0</td> </tr> <tr> <td>2025-03-20</td> <td>-112.0</td> </tr> <tr> <td>2025-03-21</td> <td>-212.0</td> </tr> <tr> <td>2025-03-24</td> <td>-272.0</td> </tr> </tbody></table>|
 |![price](image/0573.HK_1wk-1mo_price.png)|![profit](image/0573.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-02-24</td> <td>-192.0</td> </tr> <tr> <td>2025-03-03</td> <td>-132.0</td> </tr> <tr> <td>2025-03-10</td> <td>-152.0</td> </tr> <tr> <td>2025-03-17</td> <td>-212.0</td> </tr> </tbody></table>|
 ---
 ## 0560.HK [📈] [$64.00] [1.99%]:

@@ -1,5 +1,5 @@
 ## Net Profit [📉]:
-### $-1707.00
+### $-1712.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>NaN</td> </tr> <tr> <td>10:00</td> <td>NaN</td> </tr> <tr> <td>10:30</td> <td>NaN</td> </tr> <tr> <td>11:00</td> <td>NaN</td> </tr> <tr> <td>11:30</td> <td>NaN</td> </tr> <tr> <td>13:00</td> <td>NaN</td> </tr> <tr> <td>13:30</td> <td>NaN</td> </tr> <tr> <td>14:00</td> <td>NaN</td> </tr> <tr> <td>14:30</td> <td>-1707.0</td> </tr> <tr> <td>15:00</td> <td>-1707.0</td> </tr> </tbody></table>|
@@ -38,11 +38,11 @@
 |![price](image/1310.HK_1d-5d_price.png)|![profit](image/1310.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-28</td> <td>-314.0</td> </tr> <tr> <td>2025-03-31</td> <td>-329.0</td> </tr> <tr> <td>2025-04-01</td> <td>-319.0</td> </tr> <tr> <td>2025-04-02</td> <td>-314.0</td> </tr> <tr> <td>2025-04-03</td> <td>-309.0</td> </tr> </tbody></table>|
 |![price](image/1310.HK_1wk-1mo_price.png)|![profit](image/1310.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-03</td> <td>-334.0</td> </tr> <tr> <td>2025-03-10</td> <td>-304.0</td> </tr> <tr> <td>2025-03-17</td> <td>-334.0</td> </tr> <tr> <td>2025-03-24</td> <td>-314.0</td> </tr> <tr> <td>2025-03-31</td> <td>-309.0</td> </tr> </tbody></table>|
 ---
-## 2638.HK [📉] [$-129.00] [-4.53%]:
+## 2638.HK [📉] [$-134.00] [-4.70%]:
 #### HK Electric Investments and HK Electric Investments Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-139.0</td> </tr> <tr> <td>10:00</td> <td>-129.0</td> </tr> <tr> <td>10:30</td> <td>-129.0</td> </tr> <tr> <td>11:00</td> <td>-129.0</td> </tr> <tr> <td>11:30</td> <td>-139.0</td> </tr> <tr> <td>13:00</td> <td>-134.0</td> </tr> <tr> <td>13:30</td> <td>-129.0</td> </tr> <tr> <td>14:00</td> <td>-139.0</td> </tr> <tr> <td>14:30</td> <td>-129.0</td> </tr> <tr> <td>15:00</td> <td>-129.0</td> </tr> </tbody></table>|
+|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-139.0</td> </tr> <tr> <td>10:00</td> <td>-129.0</td> </tr> <tr> <td>10:30</td> <td>-129.0</td> </tr> <tr> <td>11:00</td> <td>-129.0</td> </tr> <tr> <td>11:30</td> <td>-139.0</td> </tr> <tr> <td>13:00</td> <td>-134.0</td> </tr> <tr> <td>13:30</td> <td>-129.0</td> </tr> <tr> <td>14:00</td> <td>-139.0</td> </tr> <tr> <td>14:30</td> <td>-129.0</td> </tr> <tr> <td>15:00</td> <td>-134.0</td> </tr> </tbody></table>|
 |![price](image/2638.HK_1d-5d_price.png)|![profit](image/2638.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-28</td> <td>-199.0</td> </tr> <tr> <td>2025-03-31</td> <td>-164.0</td> </tr> <tr> <td>2025-04-01</td> <td>-154.0</td> </tr> <tr> <td>2025-04-02</td> <td>-134.0</td> </tr> <tr> <td>2025-04-03</td> <td>-129.0</td> </tr> </tbody></table>|
 |![price](image/2638.HK_1wk-1mo_price.png)|![profit](image/2638.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-03-03</td> <td>-129.0</td> </tr> <tr> <td>2025-03-10</td> <td>-119.0</td> </tr> <tr> <td>2025-03-17</td> <td>-149.0</td> </tr> <tr> <td>2025-03-24</td> <td>-199.0</td> </tr> <tr> <td>2025-03-31</td> <td>-129.0</td> </tr> </tbody></table>|
 ---

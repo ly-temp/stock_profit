@@ -1,3 +1,3 @@
-[ly](record/ly/summary.md): [📉] [$-2402.00]  
-[fa](record/fa/summary.md): [📉] [$-939399.99]  
-[mm](record/mm/summary.md): [📉] [$-1765.40]  
+[ly](record/ly/summary.md): [📉] [$-2392.00]  
+[fa](record/fa/summary.md): [📉] [$-936960.00]  
+[mm](record/mm/summary.md): [📉] [$-1803.40]  

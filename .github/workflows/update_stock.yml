@@ -1,0 +1,22 @@
+on:
+  push:
+  schedule:
+    - cron:  '5,35 1-8 * * 1-5'
+jobs:
+  update_stock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          git pull
+          chmod +x ./startup.sh
+          ./startup.sh
+          python update.py
+          mkdir -p log
+          printf %s "${{ github.event_name }}\t" >> log/log.txt
+          TZ='UTC-8' date '+%Y-%m-%d %H:%M:%S' >> log/log.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add ./log ./record ./index.md
+          git commit -m "github action"
+          git push

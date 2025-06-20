@@ -1,5 +1,5 @@
 ## Net Profit [📉]:
-### $-3842.00
+### $-3837.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>NaN</td> </tr> <tr> <td>10:00</td> <td>NaN</td> </tr> <tr> <td>10:30</td> <td>NaN</td> </tr> <tr> <td>11:00</td> <td>NaN</td> </tr> <tr> <td>11:30</td> <td>-3857.0</td> </tr> <tr> <td>13:00</td> <td>-3857.0</td> </tr> <tr> <td>13:30</td> <td>-3857.0</td> </tr> <tr> <td>14:00</td> <td>-3857.0</td> </tr> <tr> <td>14:30</td> <td>-3857.0</td> </tr> <tr> <td>15:00</td> <td>-3857.0</td> </tr> </tbody></table>|
@@ -30,11 +30,11 @@
 |![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-06-16</td> <td>-1416.0</td> </tr> <tr> <td>2025-06-17</td> <td>-1416.0</td> </tr> <tr> <td>2025-06-18</td> <td>-1416.0</td> </tr> <tr> <td>2025-06-19</td> <td>-1436.0</td> </tr> <tr> <td>2025-06-20</td> <td>-1416.0</td> </tr> </tbody></table>|
 |![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-05-19</td> <td>-1375.18</td> </tr> <tr> <td>2025-05-26</td> <td>-1394.37</td> </tr> <tr> <td>2025-06-02</td> <td>-1490.29</td> </tr> <tr> <td>2025-06-09</td> <td>-1456.00</td> </tr> <tr> <td>2025-06-16</td> <td>-1416.00</td> </tr> </tbody></table>|
 ---
-## 1310.HK [📉] [$-444.00] [-15.21%]:
+## 1310.HK [📉] [$-439.00] [-15.04%]:
 #### HKBN
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/1310.HK_30m-1d_price.png)|![profit](image/1310.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-439.0</td> </tr> <tr> <td>10:00</td> <td>-439.0</td> </tr> <tr> <td>10:30</td> <td>-439.0</td> </tr> <tr> <td>11:00</td> <td>-444.0</td> </tr> <tr> <td>11:30</td> <td>-439.0</td> </tr> <tr> <td>13:00</td> <td>-439.0</td> </tr> <tr> <td>13:30</td> <td>-439.0</td> </tr> <tr> <td>14:00</td> <td>-444.0</td> </tr> <tr> <td>14:30</td> <td>-439.0</td> </tr> <tr> <td>15:00</td> <td>-444.0</td> </tr> </tbody></table>|
+|![price](image/1310.HK_30m-1d_price.png)|![profit](image/1310.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-439.0</td> </tr> <tr> <td>10:00</td> <td>-439.0</td> </tr> <tr> <td>10:30</td> <td>-439.0</td> </tr> <tr> <td>11:00</td> <td>-444.0</td> </tr> <tr> <td>11:30</td> <td>-439.0</td> </tr> <tr> <td>13:00</td> <td>-439.0</td> </tr> <tr> <td>13:30</td> <td>-439.0</td> </tr> <tr> <td>14:00</td> <td>-444.0</td> </tr> <tr> <td>14:30</td> <td>-439.0</td> </tr> <tr> <td>15:00</td> <td>-439.0</td> </tr> </tbody></table>|
 |![price](image/1310.HK_1d-5d_price.png)|![profit](image/1310.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-06-16</td> <td>-439.0</td> </tr> <tr> <td>2025-06-17</td> <td>-434.0</td> </tr> <tr> <td>2025-06-18</td> <td>-439.0</td> </tr> <tr> <td>2025-06-19</td> <td>-444.0</td> </tr> <tr> <td>2025-06-20</td> <td>-444.0</td> </tr> </tbody></table>|
 |![price](image/1310.HK_1wk-1mo_price.png)|![profit](image/1310.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-05-19</td> <td>-441.35</td> </tr> <tr> <td>2025-05-26</td> <td>-518.93</td> </tr> <tr> <td>2025-06-02</td> <td>-434.00</td> </tr> <tr> <td>2025-06-09</td> <td>-439.00</td> </tr> <tr> <td>2025-06-16</td> <td>-444.00</td> </tr> </tbody></table>|
 ---

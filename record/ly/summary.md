@@ -50,7 +50,7 @@
 #### GOLDLION HOLD
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0533.HK_30m-1d_price.png)|![profit](image/0533.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>10:30</td> <td>-915.0</td> </tr> <tr> <td>11:00</td> <td>-885.0</td> </tr> </tbody></table>|
+|![price](image/0533.HK_30m-1d_price.png)|![profit](image/0533.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>10:30</td> <td>-915.0</td> </tr> <tr> <td>11:00</td> <td>-885.0</td> </tr> <tr> <td>11:30</td> <td>-885.0</td> </tr> </tbody></table>|
 |![price](image/0533.HK_1d-5d_price.png)|![profit](image/0533.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-02</td> <td>-1125.0</td> </tr> <tr> <td>2025-07-07</td> <td>-915.0</td> </tr> <tr> <td>2025-07-08</td> <td>-885.0</td> </tr> </tbody></table>|
 |![price](image/0533.HK_1wk-1mo_price.png)|![profit](image/0533.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-06-09</td> <td>-1125.0</td> </tr> <tr> <td>2025-06-16</td> <td>-1125.0</td> </tr> <tr> <td>2025-06-23</td> <td>-1095.0</td> </tr> <tr> <td>2025-06-30</td> <td>-1125.0</td> </tr> <tr> <td>2025-07-07</td> <td>-885.0</td> </tr> </tbody></table>|
 ---

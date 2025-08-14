@@ -1,18 +1,18 @@
 ## Net Profit [📉]:
-### $-2280.00
+### $-3012.00
 |type|graph|data|
 |:---:|:---:|:---:|
-|30m / 1d|![net_profit](image/overall_30m-1d.png)||
-|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-3017.0</td> </tr> <tr> <td>2025-08-11</td> <td>-2987.0</td> </tr> <tr> <td>2025-08-12</td> <td>-2947.0</td> </tr> <tr> <td>2025-08-13</td> <td>-2902.0</td> </tr> <tr> <td>2025-08-14</td> <td>-2932.0</td> </tr> </tbody></table>|
-|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-3257.0</td> </tr> <tr> <td>2025-07-21</td> <td>-2932.0</td> </tr> <tr> <td>2025-07-28</td> <td>-3187.0</td> </tr> <tr> <td>2025-08-04</td> <td>-3017.0</td> </tr> <tr> <td>2025-08-11</td> <td>-2932.0</td> </tr> </tbody></table>|
+|30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>NaN</td> </tr> <tr> <td>10:00</td> <td>-2952.0</td> </tr> <tr> <td>10:30</td> <td>-2952.0</td> </tr> <tr> <td>11:00</td> <td>-2952.0</td> </tr> <tr> <td>11:30</td> <td>-2952.0</td> </tr> </tbody></table>|
+|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-3017.0</td> </tr> <tr> <td>2025-08-11</td> <td>-2987.0</td> </tr> <tr> <td>2025-08-12</td> <td>-2947.0</td> </tr> <tr> <td>2025-08-13</td> <td>-2902.0</td> </tr> <tr> <td>2025-08-14</td> <td>-3012.0</td> </tr> </tbody></table>|
+|1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-3257.0</td> </tr> <tr> <td>2025-07-21</td> <td>-2932.0</td> </tr> <tr> <td>2025-07-28</td> <td>-3187.0</td> </tr> <tr> <td>2025-08-04</td> <td>-3017.0</td> </tr> <tr> <td>2025-08-11</td> <td>-3012.0</td> </tr> </tbody></table>|
 ---
-## 0573.HK [📈] [$0.00] [0.00%]:
+## 0573.HK [📉] [$-692.00] [-36.97%]:
 #### TAO HEUNG HLDGS
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>index</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>00:00</td> <td>0</td> </tr> </tbody></table>|
-|![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-672.0</td> </tr> <tr> <td>2025-08-11</td> <td>-672.0</td> </tr> <tr> <td>2025-08-12</td> <td>-612.0</td> </tr> <tr> <td>2025-08-13</td> <td>-632.0</td> </tr> <tr> <td>2025-08-14</td> <td>-652.0</td> </tr> </tbody></table>|
-|![price](image/0573.HK_1wk-1mo_price.png)|![profit](image/0573.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-692.0</td> </tr> <tr> <td>2025-07-21</td> <td>-632.0</td> </tr> <tr> <td>2025-07-28</td> <td>-692.0</td> </tr> <tr> <td>2025-08-04</td> <td>-672.0</td> </tr> <tr> <td>2025-08-11</td> <td>-652.0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>10:00</td> <td>-712.0</td> </tr> <tr> <td>11:30</td> <td>-692.0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-672.0</td> </tr> <tr> <td>2025-08-11</td> <td>-672.0</td> </tr> <tr> <td>2025-08-12</td> <td>-612.0</td> </tr> <tr> <td>2025-08-13</td> <td>-632.0</td> </tr> <tr> <td>2025-08-14</td> <td>-692.0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_1wk-1mo_price.png)|![profit](image/0573.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-692.0</td> </tr> <tr> <td>2025-07-21</td> <td>-632.0</td> </tr> <tr> <td>2025-07-28</td> <td>-692.0</td> </tr> <tr> <td>2025-08-04</td> <td>-672.0</td> </tr> <tr> <td>2025-08-11</td> <td>-692.0</td> </tr> </tbody></table>|
 ---
 ## 0560.HK [📉] [$-56.00] [-1.74%]:
 #### CHU KONG SHIP
@@ -22,13 +22,13 @@
 |![price](image/0560.HK_1d-5d_price.png)|![profit](image/0560.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-56.0</td> </tr> <tr> <td>2025-08-11</td> <td>-16.0</td> </tr> <tr> <td>2025-08-12</td> <td>-56.0</td> </tr> <tr> <td>2025-08-13</td> <td>-16.0</td> </tr> <tr> <td>2025-08-14</td> <td>-56.0</td> </tr> </tbody></table>|
 |![price](image/0560.HK_1wk-1mo_price.png)|![profit](image/0560.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-136.0</td> </tr> <tr> <td>2025-07-21</td> <td>-56.0</td> </tr> <tr> <td>2025-07-28</td> <td>-96.0</td> </tr> <tr> <td>2025-08-04</td> <td>-56.0</td> </tr> <tr> <td>2025-08-11</td> <td>-56.0</td> </tr> </tbody></table>|
 ---
-## 0709.HK [📉] [$-1116.00] [-26.72%]:
+## 0709.HK [📉] [$-1156.00] [-27.68%]:
 #### GIORDANO INT'L
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1136.0</td> </tr> <tr> <td>10:00</td> <td>-1116.0</td> </tr> <tr> <td>10:30</td> <td>-1116.0</td> </tr> <tr> <td>11:00</td> <td>-1116.0</td> </tr> </tbody></table>|
-|![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-1136.0</td> </tr> <tr> <td>2025-08-11</td> <td>-1156.0</td> </tr> <tr> <td>2025-08-12</td> <td>-1136.0</td> </tr> <tr> <td>2025-08-13</td> <td>-1156.0</td> </tr> <tr> <td>2025-08-14</td> <td>-1116.0</td> </tr> </tbody></table>|
-|![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-1276.0</td> </tr> <tr> <td>2025-07-21</td> <td>-1136.0</td> </tr> <tr> <td>2025-07-28</td> <td>-1236.0</td> </tr> <tr> <td>2025-08-04</td> <td>-1136.0</td> </tr> <tr> <td>2025-08-11</td> <td>-1116.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1136.0</td> </tr> <tr> <td>10:00</td> <td>-1116.0</td> </tr> <tr> <td>10:30</td> <td>-1116.0</td> </tr> <tr> <td>11:00</td> <td>-1116.0</td> </tr> <tr> <td>11:30</td> <td>-1156.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-08-08</td> <td>-1136.0</td> </tr> <tr> <td>2025-08-11</td> <td>-1156.0</td> </tr> <tr> <td>2025-08-12</td> <td>-1136.0</td> </tr> <tr> <td>2025-08-13</td> <td>-1156.0</td> </tr> <tr> <td>2025-08-14</td> <td>-1156.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-07-14</td> <td>-1276.0</td> </tr> <tr> <td>2025-07-21</td> <td>-1136.0</td> </tr> <tr> <td>2025-07-28</td> <td>-1236.0</td> </tr> <tr> <td>2025-08-04</td> <td>-1136.0</td> </tr> <tr> <td>2025-08-11</td> <td>-1156.0</td> </tr> </tbody></table>|
 ---
 ## 1310.HK [📉] [$-389.00] [-13.33%]:
 #### HKBN

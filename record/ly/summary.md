@@ -18,7 +18,7 @@
 #### CHU KONG SHIP
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0560.HK_30m-1d_price.png)|![profit](image/0560.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>11:00</td> <td>-136.0</td> </tr> </tbody></table>|
+|![price](image/0560.HK_30m-1d_price.png)|![profit](image/0560.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>11:00</td> <td>-136.0</td> </tr> <tr> <td>13:00</td> <td>-136.0</td> </tr> </tbody></table>|
 |![price](image/0560.HK_1d-5d_price.png)|![profit](image/0560.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-10-20</td> <td>-176.0</td> </tr> <tr> <td>2025-10-21</td> <td>-136.0</td> </tr> <tr> <td>2025-10-22</td> <td>-136.0</td> </tr> <tr> <td>2025-10-23</td> <td>-136.0</td> </tr> <tr> <td>2025-10-24</td> <td>-136.0</td> </tr> </tbody></table>|
 |![price](image/0560.HK_1wk-1mo_price.png)|![profit](image/0560.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-09-22</td> <td>-136.0</td> </tr> <tr> <td>2025-09-29</td> <td>24.0</td> </tr> <tr> <td>2025-10-06</td> <td>-136.0</td> </tr> <tr> <td>2025-10-13</td> <td>-136.0</td> </tr> <tr> <td>2025-10-20</td> <td>-136.0</td> </tr> </tbody></table>|
 ---

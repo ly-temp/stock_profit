@@ -1,24 +1,24 @@
 ## Net Profit [📈]:
-### $6138.60
+### $6108.60
 |type|graph|data|
 |:---:|:---:|:---:|
-|30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>01:30</td> <td>6040.6</td> </tr> <tr> <td>02:00</td> <td>6184.6</td> </tr> <tr> <td>02:30</td> <td>6138.6</td> </tr> </tbody></table>|
-|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-01</td> <td>8736.6</td> </tr> <tr> <td>2025-12-02</td> <td>7808.6</td> </tr> <tr> <td>2025-12-03</td> <td>6866.6</td> </tr> <tr> <td>2025-12-04</td> <td>6628.6</td> </tr> <tr> <td>2025-12-07</td> <td>6138.6</td> </tr> </tbody></table>|
+|30m / 1d|![net_profit](image/overall_30m-1d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>01:30</td> <td>6040.6</td> </tr> <tr> <td>02:00</td> <td>6184.6</td> </tr> <tr> <td>02:30</td> <td>6206.6</td> </tr> <tr> <td>03:00</td> <td>6070.6</td> </tr> <tr> <td>03:30</td> <td>6108.6</td> </tr> </tbody></table>|
+|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-01</td> <td>8736.6</td> </tr> <tr> <td>2025-12-02</td> <td>7808.6</td> </tr> <tr> <td>2025-12-03</td> <td>6866.6</td> </tr> <tr> <td>2025-12-04</td> <td>6628.6</td> </tr> <tr> <td>2025-12-07</td> <td>6108.6</td> </tr> </tbody></table>|
 |1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-09</td> <td>8094.6</td> </tr> <tr> <td>2025-11-16</td> <td>6232.6</td> </tr> <tr> <td>2025-11-23</td> <td>7498.6</td> </tr> <tr> <td>2025-11-30</td> <td>6628.6</td> </tr> </tbody></table>|
 ---
 ## 002100.SZ [📉] [$-4001.40] [-13.22%]:
 #### TECON BIOLOGY Co.LTD
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/002100.SZ_30m-1d_price.png)|![profit](image/002100.SZ_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-4039.4</td> </tr> <tr> <td>10:00</td> <td>-3925.4</td> </tr> <tr> <td>10:30</td> <td>-4001.4</td> </tr> </tbody></table>|
+|![price](image/002100.SZ_30m-1d_price.png)|![profit](image/002100.SZ_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-4039.4</td> </tr> <tr> <td>10:00</td> <td>-3925.4</td> </tr> <tr> <td>10:30</td> <td>-3963.4</td> </tr> <tr> <td>11:00</td> <td>-4039.4</td> </tr> <tr> <td>11:30</td> <td>-4001.4</td> </tr> </tbody></table>|
 |![price](image/002100.SZ_1d-5d_price.png)|![profit](image/002100.SZ_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-02</td> <td>-3203.4</td> </tr> <tr> <td>2025-12-03</td> <td>-3621.4</td> </tr> <tr> <td>2025-12-04</td> <td>-3963.4</td> </tr> <tr> <td>2025-12-05</td> <td>-3811.4</td> </tr> <tr> <td>2025-12-08</td> <td>-4001.4</td> </tr> </tbody></table>|
 |![price](image/002100.SZ_1wk-1mo_price.png)|![profit](image/002100.SZ_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-10</td> <td>-1265.4</td> </tr> <tr> <td>2025-11-17</td> <td>-3127.4</td> </tr> <tr> <td>2025-11-24</td> <td>-2671.4</td> </tr> <tr> <td>2025-12-01</td> <td>-3811.4</td> </tr> </tbody></table>|
 ---
-## 0066.HK [📈] [$10140.00] [28.05%]:
+## 0066.HK [📈] [$10110.00] [27.97%]:
 #### MTR CORPORATION
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0066.HK_30m-1d_price.png)|![profit](image/0066.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>10080.0</td> </tr> <tr> <td>10:00</td> <td>10110.0</td> </tr> <tr> <td>10:30</td> <td>10140.0</td> </tr> </tbody></table>|
-|![price](image/0066.HK_1d-5d_price.png)|![profit](image/0066.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-02</td> <td>11940.0</td> </tr> <tr> <td>2025-12-03</td> <td>11430.0</td> </tr> <tr> <td>2025-12-04</td> <td>10830.0</td> </tr> <tr> <td>2025-12-05</td> <td>10440.0</td> </tr> <tr> <td>2025-12-08</td> <td>10140.0</td> </tr> </tbody></table>|
+|![price](image/0066.HK_30m-1d_price.png)|![profit](image/0066.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>10080.0</td> </tr> <tr> <td>10:00</td> <td>10110.0</td> </tr> <tr> <td>10:30</td> <td>10170.0</td> </tr> <tr> <td>11:00</td> <td>10110.0</td> </tr> <tr> <td>11:30</td> <td>10110.0</td> </tr> </tbody></table>|
+|![price](image/0066.HK_1d-5d_price.png)|![profit](image/0066.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-02</td> <td>11940.0</td> </tr> <tr> <td>2025-12-03</td> <td>11430.0</td> </tr> <tr> <td>2025-12-04</td> <td>10830.0</td> </tr> <tr> <td>2025-12-05</td> <td>10440.0</td> </tr> <tr> <td>2025-12-08</td> <td>10110.0</td> </tr> </tbody></table>|
 |![price](image/0066.HK_1wk-1mo_price.png)|![profit](image/0066.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-10</td> <td>9360.0</td> </tr> <tr> <td>2025-11-17</td> <td>9360.0</td> </tr> <tr> <td>2025-11-24</td> <td>10170.0</td> </tr> <tr> <td>2025-12-01</td> <td>10440.0</td> </tr> </tbody></table>|
 ---

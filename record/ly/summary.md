@@ -1,16 +1,16 @@
 ## Net Profit [📉]:
-### $-910.00
+### $-1502.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
 |1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-18</td> <td>-2481.5</td> </tr> <tr> <td>2025-12-19</td> <td>-2547.0</td> </tr> <tr> <td>2025-12-22</td> <td>-2667.0</td> </tr> <tr> <td>2025-12-23</td> <td>-2627.0</td> </tr> <tr> <td>2025-12-24</td> <td>-2627.0</td> </tr> </tbody></table>|
 |1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-24</td> <td>-2364.39</td> </tr> <tr> <td>2025-12-01</td> <td>-2340.66</td> </tr> <tr> <td>2025-12-08</td> <td>-2503.96</td> </tr> <tr> <td>2025-12-15</td> <td>-2637.13</td> </tr> <tr> <td>2025-12-22</td> <td>-2637.00</td> </tr> </tbody></table>|
 ---
-## 0573.HK [📈] [$0.00] [0.00%]:
+## 0573.HK [📉] [$-592.00] [-31.62%]:
 #### Tao Heung Holdings Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>index</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>00:00</td> <td>0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>11:30</td> <td>-592.0</td> </tr> </tbody></table>|
 |![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-18</td> <td>-572.0</td> </tr> <tr> <td>2025-12-19</td> <td>-532.0</td> </tr> <tr> <td>2025-12-22</td> <td>-592.0</td> </tr> <tr> <td>2025-12-23</td> <td>-592.0</td> </tr> <tr> <td>2025-12-24</td> <td>-592.0</td> </tr> </tbody></table>|
 |![price](image/0573.HK_1wk-1mo_price.png)|![profit](image/0573.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-24</td> <td>-572.0</td> </tr> <tr> <td>2025-12-01</td> <td>-572.0</td> </tr> <tr> <td>2025-12-08</td> <td>-572.0</td> </tr> <tr> <td>2025-12-15</td> <td>-532.0</td> </tr> <tr> <td>2025-12-22</td> <td>-592.0</td> </tr> </tbody></table>|
 ---
@@ -26,7 +26,7 @@
 #### Giordano International Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>10:00</td> <td>-1256.0</td> </tr> <tr> <td>10:30</td> <td>-1236.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>10:00</td> <td>-1256.0</td> </tr> <tr> <td>10:30</td> <td>-1236.0</td> </tr> <tr> <td>11:30</td> <td>-1236.0</td> </tr> </tbody></table>|
 |![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-18</td> <td>-1236.0</td> </tr> <tr> <td>2025-12-19</td> <td>-1256.0</td> </tr> <tr> <td>2025-12-22</td> <td>-1236.0</td> </tr> <tr> <td>2025-12-23</td> <td>-1236.0</td> </tr> <tr> <td>2025-12-24</td> <td>-1236.0</td> </tr> </tbody></table>|
 |![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-24</td> <td>-1136.0</td> </tr> <tr> <td>2025-12-01</td> <td>-1156.0</td> </tr> <tr> <td>2025-12-08</td> <td>-1216.0</td> </tr> <tr> <td>2025-12-15</td> <td>-1256.0</td> </tr> <tr> <td>2025-12-22</td> <td>-1236.0</td> </tr> </tbody></table>|
 ---
@@ -42,7 +42,7 @@
 #### HK Electric Investments and HK Electric Investments Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>311.0</td> </tr> <tr> <td>10:00</td> <td>296.0</td> </tr> <tr> <td>10:30</td> <td>296.0</td> </tr> <tr> <td>11:00</td> <td>311.0</td> </tr> <tr> <td>11:30</td> <td>311.0</td> </tr> </tbody></table>|
+|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>311.0</td> </tr> <tr> <td>10:00</td> <td>296.0</td> </tr> <tr> <td>10:30</td> <td>296.0</td> </tr> <tr> <td>11:00</td> <td>311.0</td> </tr> <tr> <td>11:30</td> <td>311.0</td> </tr> <tr> <td>12:00</td> <td>311.0</td> </tr> </tbody></table>|
 |![price](image/2638.HK_1d-5d_price.png)|![profit](image/2638.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-18</td> <td>286.0</td> </tr> <tr> <td>2025-12-19</td> <td>301.0</td> </tr> <tr> <td>2025-12-22</td> <td>301.0</td> </tr> <tr> <td>2025-12-23</td> <td>306.0</td> </tr> <tr> <td>2025-12-24</td> <td>311.0</td> </tr> </tbody></table>|
 |![price](image/2638.HK_1wk-1mo_price.png)|![profit](image/2638.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-11-24</td> <td>276.0</td> </tr> <tr> <td>2025-12-01</td> <td>306.0</td> </tr> <tr> <td>2025-12-08</td> <td>301.0</td> </tr> <tr> <td>2025-12-15</td> <td>301.0</td> </tr> <tr> <td>2025-12-22</td> <td>311.0</td> </tr> </tbody></table>|
 ---

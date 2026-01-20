@@ -3,7 +3,7 @@
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
-|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-01-14</td> <td>-2332.0</td> </tr> <tr> <td>2026-01-15</td> <td>-2347.0</td> </tr> <tr> <td>2026-01-16</td> <td>-2347.0</td> </tr> <tr> <td>2026-01-19</td> <td>-2267.0</td> </tr> <tr> <td>2026-01-20</td> <td>-2267.0</td> </tr> </tbody></table>|
+|1d / 5d|![net_profit](image/overall_1d-5d.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-01-14</td> <td>-2332.0</td> </tr> <tr> <td>2026-01-15</td> <td>-2347.0</td> </tr> <tr> <td>2026-01-16</td> <td>-2347.0</td> </tr> <tr> <td>2026-01-19</td> <td>-2307.0</td> </tr> <tr> <td>2026-01-20</td> <td>-2307.0</td> </tr> </tbody></table>|
 |1wk / 1mo|![net_profit](image/overall_1wk-1mo.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-22</td> <td>-2627.0</td> </tr> <tr> <td>2025-12-29</td> <td>-2577.0</td> </tr> <tr> <td>2026-01-05</td> <td>-2602.0</td> </tr> <tr> <td>2026-01-12</td> <td>-2347.0</td> </tr> <tr> <td>2026-01-19</td> <td>-2292.0</td> </tr> </tbody></table>|
 ---
 ## 0573.HK [📈] [$0.00] [0.00%]:
@@ -11,7 +11,7 @@
 |price|profit|data|
 |:---:|:---:|:---:|
 |![price](image/0573.HK_30m-1d_price.png)|![profit](image/0573.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>index</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>00:00</td> <td>0</td> </tr> </tbody></table>|
-|![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-01-14</td> <td>-572.0</td> </tr> <tr> <td>2026-01-15</td> <td>-572.0</td> </tr> <tr> <td>2026-01-16</td> <td>-592.0</td> </tr> <tr> <td>2026-01-19</td> <td>-512.0</td> </tr> </tbody></table>|
+|![price](image/0573.HK_1d-5d_price.png)|![profit](image/0573.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-01-14</td> <td>-572.0</td> </tr> <tr> <td>2026-01-15</td> <td>-572.0</td> </tr> <tr> <td>2026-01-16</td> <td>-592.0</td> </tr> <tr> <td>2026-01-19</td> <td>-552.0</td> </tr> </tbody></table>|
 |![price](image/0573.HK_1wk-1mo_price.png)|![profit](image/0573.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2025-12-22</td> <td>-592.0</td> </tr> <tr> <td>2025-12-29</td> <td>-572.0</td> </tr> <tr> <td>2026-01-05</td> <td>-592.0</td> </tr> <tr> <td>2026-01-12</td> <td>-592.0</td> </tr> <tr> <td>2026-01-19</td> <td>-552.0</td> </tr> </tbody></table>|
 ---
 ## 0560.HK [📉] [$-216.00] [-6.72%]:

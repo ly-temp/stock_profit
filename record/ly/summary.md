@@ -1,5 +1,5 @@
 ## Net Profit [📉]:
-### $-1275.00
+### $-1280.00
 |type|graph|data|
 |:---:|:---:|:---:|
 |30m / 1d|![net_profit](image/overall_30m-1d.png)||
@@ -22,27 +22,27 @@
 |![price](image/0560.HK_1d-5d_price.png)|![profit](image/0560.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>-256.0</td> </tr> <tr> <td>2026-03-04</td> <td>-256.0</td> </tr> <tr> <td>2026-03-05</td> <td>-256.0</td> </tr> <tr> <td>2026-03-06</td> <td>-256.0</td> </tr> <tr> <td>2026-03-09</td> <td>-256.0</td> </tr> </tbody></table>|
 |![price](image/0560.HK_1wk-1mo_price.png)|![profit](image/0560.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-02-09</td> <td>-256.0</td> </tr> <tr> <td>2026-02-16</td> <td>-256.0</td> </tr> <tr> <td>2026-02-23</td> <td>-216.0</td> </tr> <tr> <td>2026-03-02</td> <td>-256.0</td> </tr> </tbody></table>|
 ---
-## 0709.HK [📉] [$-1236.00] [-29.60%]:
+## 0709.HK [📉] [$-1256.00] [-30.08%]:
 #### Giordano International Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1276.0</td> </tr> <tr> <td>10:00</td> <td>-1256.0</td> </tr> <tr> <td>10:30</td> <td>-1256.0</td> </tr> <tr> <td>11:00</td> <td>-1256.0</td> </tr> <tr> <td>11:30</td> <td>-1256.0</td> </tr> <tr> <td>13:00</td> <td>-1236.0</td> </tr> </tbody></table>|
-|![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>-1176.0</td> </tr> <tr> <td>2026-03-04</td> <td>-1216.0</td> </tr> <tr> <td>2026-03-05</td> <td>-1196.0</td> </tr> <tr> <td>2026-03-06</td> <td>-1176.0</td> </tr> <tr> <td>2026-03-09</td> <td>-1236.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_30m-1d_price.png)|![profit](image/0709.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1276.0</td> </tr> <tr> <td>10:00</td> <td>-1256.0</td> </tr> <tr> <td>10:30</td> <td>-1256.0</td> </tr> <tr> <td>11:00</td> <td>-1256.0</td> </tr> <tr> <td>11:30</td> <td>-1256.0</td> </tr> <tr> <td>13:00</td> <td>-1256.0</td> </tr> </tbody></table>|
+|![price](image/0709.HK_1d-5d_price.png)|![profit](image/0709.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>-1176.0</td> </tr> <tr> <td>2026-03-04</td> <td>-1216.0</td> </tr> <tr> <td>2026-03-05</td> <td>-1196.0</td> </tr> <tr> <td>2026-03-06</td> <td>-1176.0</td> </tr> <tr> <td>2026-03-09</td> <td>-1256.0</td> </tr> </tbody></table>|
 |![price](image/0709.HK_1wk-1mo_price.png)|![profit](image/0709.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-02-09</td> <td>-1176.0</td> </tr> <tr> <td>2026-02-16</td> <td>-1156.0</td> </tr> <tr> <td>2026-02-23</td> <td>-1116.0</td> </tr> <tr> <td>2026-03-02</td> <td>-1176.0</td> </tr> </tbody></table>|
 ---
-## 1310.HK [📈] [$741.00] [25.39%]:
+## 1310.HK [📈] [$756.00] [25.90%]:
 #### HKBN Ltd.
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/1310.HK_30m-1d_price.png)|![profit](image/1310.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>656.0</td> </tr> <tr> <td>10:00</td> <td>706.0</td> </tr> <tr> <td>10:30</td> <td>741.0</td> </tr> <tr> <td>11:00</td> <td>731.0</td> </tr> <tr> <td>11:30</td> <td>731.0</td> </tr> <tr> <td>13:00</td> <td>741.0</td> </tr> </tbody></table>|
-|![price](image/1310.HK_1d-5d_price.png)|![profit](image/1310.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>731.0</td> </tr> <tr> <td>2026-03-04</td> <td>801.0</td> </tr> <tr> <td>2026-03-05</td> <td>736.0</td> </tr> <tr> <td>2026-03-06</td> <td>761.0</td> </tr> <tr> <td>2026-03-09</td> <td>741.0</td> </tr> </tbody></table>|
+|![price](image/1310.HK_30m-1d_price.png)|![profit](image/1310.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>656.0</td> </tr> <tr> <td>10:00</td> <td>706.0</td> </tr> <tr> <td>10:30</td> <td>741.0</td> </tr> <tr> <td>11:00</td> <td>731.0</td> </tr> <tr> <td>11:30</td> <td>731.0</td> </tr> <tr> <td>13:00</td> <td>726.0</td> </tr> <tr> <td>13:30</td> <td>736.0</td> </tr> <tr> <td>14:00</td> <td>756.0</td> </tr> </tbody></table>|
+|![price](image/1310.HK_1d-5d_price.png)|![profit](image/1310.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>731.0</td> </tr> <tr> <td>2026-03-04</td> <td>801.0</td> </tr> <tr> <td>2026-03-05</td> <td>736.0</td> </tr> <tr> <td>2026-03-06</td> <td>761.0</td> </tr> <tr> <td>2026-03-09</td> <td>756.0</td> </tr> </tbody></table>|
 |![price](image/1310.HK_1wk-1mo_price.png)|![profit](image/1310.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-02-09</td> <td>531.0</td> </tr> <tr> <td>2026-02-16</td> <td>541.0</td> </tr> <tr> <td>2026-02-23</td> <td>766.0</td> </tr> <tr> <td>2026-03-02</td> <td>761.0</td> </tr> </tbody></table>|
 ---
 ## 2638.HK [📈] [$601.00] [21.10%]:
 #### HK Electric Investments and HK Electric Investments Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>611.0</td> </tr> <tr> <td>10:00</td> <td>616.0</td> </tr> <tr> <td>10:30</td> <td>616.0</td> </tr> <tr> <td>11:00</td> <td>586.0</td> </tr> <tr> <td>11:30</td> <td>601.0</td> </tr> <tr> <td>13:00</td> <td>601.0</td> </tr> </tbody></table>|
+|![price](image/2638.HK_30m-1d_price.png)|![profit](image/2638.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>611.0</td> </tr> <tr> <td>10:00</td> <td>616.0</td> </tr> <tr> <td>10:30</td> <td>616.0</td> </tr> <tr> <td>11:00</td> <td>586.0</td> </tr> <tr> <td>11:30</td> <td>601.0</td> </tr> <tr> <td>13:00</td> <td>591.0</td> </tr> <tr> <td>13:30</td> <td>601.0</td> </tr> <tr> <td>14:00</td> <td>601.0</td> </tr> </tbody></table>|
 |![price](image/2638.HK_1d-5d_price.png)|![profit](image/2638.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>671.0</td> </tr> <tr> <td>2026-03-04</td> <td>621.0</td> </tr> <tr> <td>2026-03-05</td> <td>666.0</td> </tr> <tr> <td>2026-03-06</td> <td>661.0</td> </tr> <tr> <td>2026-03-09</td> <td>601.0</td> </tr> </tbody></table>|
 |![price](image/2638.HK_1wk-1mo_price.png)|![profit](image/2638.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-02-09</td> <td>651.0</td> </tr> <tr> <td>2026-02-16</td> <td>651.0</td> </tr> <tr> <td>2026-02-23</td> <td>656.0</td> </tr> <tr> <td>2026-03-02</td> <td>661.0</td> </tr> </tbody></table>|
 ---
@@ -50,7 +50,7 @@
 #### Goldlion Holdings Limited
 |price|profit|data|
 |:---:|:---:|:---:|
-|![price](image/0533.HK_30m-1d_price.png)|![profit](image/0533.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1125.0</td> </tr> </tbody></table>|
+|![price](image/0533.HK_30m-1d_price.png)|![profit](image/0533.HK_30m-1d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Datetime</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>09:30</td> <td>-1125.0</td> </tr> <tr> <td>13:00</td> <td>-1125.0</td> </tr> </tbody></table>|
 |![price](image/0533.HK_1d-5d_price.png)|![profit](image/0533.HK_1d-5d_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-03-03</td> <td>-1035.0</td> </tr> <tr> <td>2026-03-04</td> <td>-1065.0</td> </tr> <tr> <td>2026-03-05</td> <td>-1095.0</td> </tr> <tr> <td>2026-03-06</td> <td>-1095.0</td> </tr> <tr> <td>2026-03-09</td> <td>-1125.0</td> </tr> </tbody></table>|
 |![price](image/0533.HK_1wk-1mo_price.png)|![profit](image/0533.HK_1wk-1mo_profit.png)|<table border="1" class="dataframe"> <thead> <tr style="text-align: center;"> <th>Date</th> <th>profit</th> </tr> </thead> <tbody> <tr> <td>2026-02-09</td> <td>-1095.0</td> </tr> <tr> <td>2026-02-16</td> <td>-1095.0</td> </tr> <tr> <td>2026-02-23</td> <td>-1095.0</td> </tr> <tr> <td>2026-03-02</td> <td>-1095.0</td> </tr> </tbody></table>|
 ---
